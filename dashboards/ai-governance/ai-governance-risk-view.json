@@ -1,0 +1,349 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "AI Governance - Risk View",
+    "core.description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": true
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "TicketsWidget",
+      "fullType": "com.infa.application.dashboard.TicketsWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "My Tasks",
+        "core.description": "AI Regulation tickets",
+        "com.infa.application.dashboard.ticketStakeholderType": "Creator",
+        "com.infa.application.dashboard.gridColumns": [
+          "com.infa.ccgf.models.issueManagement.issueTitle",
+          "com.infa.ccgf.models.issueManagement.issueStatus",
+          "com.infa.ccgf.models.issueManagement.assetName"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Project"
+        ],
+        "com.infa.application.dashboard.rowCount": 5,
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "Risk Assessment Results",
+        "core.description": "list all AI Uses cases ",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "com.infa.odin.models.custom.ca_5719284448866206850",
+          "com.infa.odin.models.custom.ca_3402316642552464067"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Project"
+        ],
+        "com.infa.application.dashboard.rowCount": 5,
+        "com.infa.application.dashboard.searchQuery": "project related to project \"Assessments & AI Projects\"",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "Sales Forecast Risk Registry Status",
+        "core.description": "",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "com.infa.odin.models.custom.ca_713191444319232357",
+          "com.infa.odin.models.custom.ca_3402316642552464067"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Project"
+        ],
+        "com.infa.application.dashboard.rowCount": 5,
+        "com.infa.application.dashboard.searchQuery": "all in project \"Sales Forecast Risk Registry\"",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "Risk Questionnaires Result",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "com.infa.odin.models.custom.ca_8391881445861137994",
+          "com.infa.odin.models.custom.ca_5270135649268872207"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Regulation"
+        ],
+        "com.infa.application.dashboard.rowCount": 5,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "3ab68165-b9a0-490e-aa47-b770821ab8f5"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.name": "AI Use Cases Per Risk",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "com.infa.odin.models.custom.risk_category"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Project"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "project",
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.groupBy": "com.infa.odin.models.custom.risk_category"
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.name": "Questionnaires Result By Risk",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "com.infa.odin.models.custom.ca_8391881445861137994",
+          "com.infa.odin.models.custom.ca_5270135649268872207"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Regulation"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "3ab68165-b9a0-490e-aa47-b770821ab8f5",
+        "com.infa.application.dashboard.groupBy": "com.infa.odin.models.custom.ca_8391881445861137994"
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.name": "AI Models by Risk Category",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "com.infa.odin.models.custom.risk_category"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "AI Model",
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.groupBy": "com.infa.odin.models.custom.risk_category"
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "\"Non-High-Risk\" Models using PII Data",
+        "core.description": "Models with Non-High-Risk PII\nModels Using PII Data Not Classified as High Risk",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description",
+          "core.stakeholderIdentity",
+          "core.modifiedOn"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "5531d6bf-94ab-4cda-a741-c1c3dc95975c"
+      }
+    },
+    {
+      "order": 8,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "Models with 'Risk Category' 'Unknown'",
+        "core.description": "List all AI Models not compliant with EU Act regulation",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 5,
+        "com.infa.application.dashboard.searchQuery": " AI models with 'Risk Category' 'Unknown'",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 9,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.name": "AI Models without stakeholder",
+        "core.description": "list of AI/ML mode used in the company without any stakeholder",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "AI model without stakeholder",
+        "com.infa.application.dashboard.groupBy": "core.assetLifecycle"
+      }
+    },
+    {
+      "order": 10,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "core.name": "PII Assets Related To AI Models",
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.AIModel.AIModel",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Metric"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business assets related to policies *pii*",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    }
+  ],
+  "layout": [
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 0,
+      "order": 1
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 8,
+      "y": 0,
+      "order": 2
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 6,
+      "order": 3
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 6,
+      "order": 4
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 8,
+      "y": 6,
+      "order": 5
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 12,
+      "order": 6
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 12,
+      "order": 7
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 8,
+      "y": 12,
+      "order": 8
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 18,
+      "order": 9
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 18,
+      "order": 10
+    }
+  ],
+  "saved_searches": {
+    "3ab68165-b9a0-490e-aa47-b770821ab8f5": {
+      "core.name": "Risk Assessment Questionnaires",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "regulation in regulation related to regulation \"Risk Assessment Questionnaires\"",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+      ],
+      "sortOrder": null
+    },
+    "5531d6bf-94ab-4cda-a741-c1c3dc95975c": {
+      "core.name": "High Risk AI Models Not Classified as High Risk",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": " AI models with 'Risk Category'  not in ('High') and related to (dataset,technical dataset) related to data element related to business terms related to policy 'Personally Identifiable Information*'",
+      "filters": null,
+      "sortOrder": null
+    }
+  },
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "ai-governance",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [],
+    "requirements": [
+      "AI risk classification",
+      "high-risk models"
+    ],
+    "locale": "en",
+    "note": "uses reusable saved searches"
+  }
+}

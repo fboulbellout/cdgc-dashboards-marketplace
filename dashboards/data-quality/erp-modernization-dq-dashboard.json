@@ -1,0 +1,265 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "ERP Modernization - DQ Dashboard",
+    "core.description": "",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": true
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "DQ Score -  JDEdwards Scope 1",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "dq rule with threshold result in (good, acceptable, 'not acceptable') and related to data element in (catalog source ora_retail_till)"
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "DQ Score - Bronze Zone",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "dq rule with threshold result in (good, acceptable, 'not acceptable') and related to data element in (catalog source ora_hermes)"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "DQ Score - Gold Zone",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "dq rule with threshold result in (good, acceptable) and related to data element in (catalog source snowflake_retail_dwh)"
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "DQ Score Consolidated",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Assets profiled",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.file.flat.FlatFile"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "technical asset which are profiled",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "DQ Rules Applied",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "core.description": "DQ Check auto-Generated with NLP & DQ Automation",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.RuleInstance",
+          "com.infa.ccgf.models.governance.RuleTemplate"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "Data Quality Rule Occurrence,Data Quality Rule Template",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "DataObservabilityWidget",
+      "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
+      "attributes": {
+        "core.name": "AI/ML Anomalies Detected By Metric",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.groupBy": "com.infa.dataobservability.anomalies.metric",
+        "com.infa.application.dashboard.assetIds": [
+          "856bf067-b916-4590-a1fb-4a3527fc8db6",
+          "09b19565-a442-47f3-8f66-082b89612896",
+          "9d385c0e-766a-4bf5-9ca3-816b11958e49",
+          "41faaa66-0718-4ab9-ab00-47a20968c8f5",
+          "cb7ce0a1-b77a-4ff0-9db1-49c3a1be2f06",
+          "382eeb0b-b8c1-4bb0-9ccf-48eea35e1521",
+          "8e313725-41c1-4c2d-a4f1-33bb477ef715",
+          "75d00833-9f02-4a83-b21a-37a744c6cfd5",
+          "ba57fa8c-fb99-4122-95e5-6e32866483bb",
+          "d02a03b0-770c-4191-a864-6ae22275df14",
+          "722405f0-b956-4d95-a374-a5b6f1173dfe",
+          "252bc0ca-09a6-4122-8d3b-e47dcf5abfe0",
+          "f2d3df2f-ba79-4512-b09d-431e50e6db21",
+          "bf3ae432-f8c1-4331-9c8c-b1451deb1cd6",
+          "80191702-aafe-41e7-897a-f21005ee7f16",
+          "f4c36fb9-cc35-4a99-af2d-f8881d34ef70",
+          "58de174f-355a-4b63-b297-e0d8c14f4aa7",
+          "672f86d4-f844-4abd-a97e-8034dc207e4f",
+          "344c6278-df45-455b-81bb-30ed131f8581",
+          "0c4c806d-eb5f-4425-af30-09ae6dd8219d",
+          "7c72cf54-e88f-44a4-8a76-d23fa8b113c4",
+          "9464a44a-e388-4dfb-8d77-693137296663",
+          "4390d611-d0b3-4e8d-b0bb-48f6a8922215",
+          "de40a3aa-c3cb-4fca-a2f1-52a6b8eb8cc2",
+          "7e673032-eb7b-4e89-81fd-b0ac32e08e0c",
+          "ea7c7aba-5be6-4d57-8d8b-8234f9eb67ab",
+          "b2a20722-7d79-4eac-ab3a-523342daafdf",
+          "e9f8b329-198c-4a82-abfa-782da44afb57",
+          "f0beea49-eade-45f1-bd69-64f7b5f695c1",
+          "949d44e8-f34f-4987-a8a3-a74656209bd3",
+          "afca2787-091c-4119-a28b-13a11a600e21",
+          "2a693597-3140-475d-976f-94ec820497c3",
+          "b9ecc5cf-3570-4930-bd67-749e2f3375d9",
+          "69d908e6-4901-4c9f-af35-7cc73fc8e4a7",
+          "ceec4234-d987-4986-8a15-25522750555e",
+          "5314b11f-97c2-4655-8a5a-a75511a23f34",
+          "7aae9000-ec23-4703-a737-1311da53e799",
+          "088b51a7-a178-4c0b-ba84-90271a80b76a",
+          "2723a1ad-80ac-4134-b306-a08e67e0df53",
+          "c9e488f1-875d-48f5-9525-06f4053af615",
+          "da850a2d-8248-4fe3-9488-febb6b792888",
+          "e6cee652-7793-4b4a-9015-b8b4755cc007",
+          "79e498af-84df-4c5b-acdb-effacd864b97",
+          "7115794b-5fa8-4661-94da-9fb6615d6ef9",
+          "6f4f3be4-3bf4-4759-8370-0875430cd147",
+          "1d2a5a31-2722-44dc-a992-0911418cb659",
+          "245164a4-d7f1-4876-9f4f-1e4c3e3a911f",
+          "7a2338ea-8022-4bef-a0d6-b3087d074774"
+        ]
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Tables with Email",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Table"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "6b858787-e12a-4a2d-9349-ef1db8fedf81"
+      }
+    },
+    {
+      "order": 8,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Data Quality Score Per Dimension",
+        "com.infa.application.dashboard.visualizationType": "ScoreChart",
+        "core.description": "Shows all DQ dimensions and how good is the overall quality for all assets in the governed environment. ",
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 9,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Data Freshness Anomalies",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "47e9839a-45ba-467e-9f68-1f1bdfe45918",
+        "com.infa.application.dashboard.groupBy": ""
+      }
+    },
+    {
+      "order": 10,
+      "widgetType": "DataObservabilityWidget",
+      "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
+      "attributes": {
+        "core.name": "Databricks Observability",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.groupBy": "com.infa.dataobservability.anomalies.metric",
+        "com.infa.application.dashboard.assetIds": [
+          "cf69dc79-1a90-4e60-a300-545abff8e5e4",
+          "cacbbf38-3084-49d3-831b-9fda506ca451",
+          "69776d78-625c-47ed-b54c-5fa6a4eb9042",
+          "303d2702-bf04-4696-a23b-cef7a4f87fa9",
+          "ef3c2601-d7a3-467f-87c6-0dc7749d917b",
+          "c1f82dde-8e58-4f52-af8d-4e028171f5d0",
+          "91443b17-0d5a-4411-bb07-4a04e4b55f3c",
+          "e1410c86-7911-47e4-8f30-c22de3f63132",
+          "bbf17eb1-9da6-45ad-9a34-6e7306739dc3",
+          "dba6ea31-90b4-4902-9826-86c9ed2647c2",
+          "b7a3c15f-8dd6-4e31-8282-99db55177fed",
+          "b7f11e4f-1024-4cdb-a157-dcc52a0aa532"
+        ]
+      }
+    }
+  ],
+  "layout": [],
+  "saved_searches": {
+    "6b858787-e12a-4a2d-9349-ef1db8fedf81": {
+      "core.name": "Table with Emails",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "table related to data element related to data element classification Email ",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+      ],
+      "sortOrder": null
+    },
+    "47e9839a-45ba-467e-9f68-1f1bdfe45918": {
+      "core.name": "Snowflake dataset not updated within last 30 days",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "technical dataset with catalog source name 'snowflake_retail_dwh' and not 'Data Freshness' within last 30 day",
+      "filters": null,
+      "sortOrder": null
+    }
+  },
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "data-quality",
+    "industry": [
+      "Manufacturing",
+      "ERP"
+    ],
+    "source_systems": [
+      "Flat files",
+      "RDBMS"
+    ],
+    "requirements": [
+      "ERP migration DQ",
+      "reconciliation"
+    ],
+    "locale": "en",
+    "note": null
+  }
+}

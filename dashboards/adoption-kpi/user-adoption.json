@@ -1,0 +1,224 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "User Adoption",
+    "core.description": "Sample dashboard to mesure catalog adoption",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": null
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Items Rated the Last 3 Months",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "core.Resource",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.odin.models.application.saps4hana.SapTable",
+          "com.infa.odin.models.application.saps4hana.SapView"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all rated within last 90 days"
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "New Technical Assets",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "Added the Last 90 Days",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.file.hierarchical.HierarchicalField",
+          "com.infa.odin.models.file.flat.FlatField",
+          "com.infa.odin.models.file.File",
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.odin.models.relational.Table",
+          "core.Resource",
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.RuleInstance"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all Created On within last 120 days"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Certified Assets",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.relational.View"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "technical datasets which are  certified"
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "New Business Assets",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": " Created In the Last 120 days",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Domain"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all assets created within last 180 day"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Technical Assets Recently Updated",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "Updated during last 3 months",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.Tableau.Worksheet",
+          "com.infa.odin.models.Tableau.Dashboard",
+          "com.infa.odin.models.Tableau.Workbook",
+          "com.infa.odin.models.relational.Schema",
+          "com.infa.odin.models.relational.View"
+        ],
+        "com.infa.application.dashboard.rowCount": 10,
+        "com.infa.application.dashboard.searchQuery": "Technical Assets updated within last 90 day"
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Business Assets Recently Updated",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "updated last 3 months",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "Business Assets updated within last 90 day"
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Assets With Collaboration",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.AIModel.AIModel",
+          "com.infa.ccgf.models.governance.System",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.Policy"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all having comments,all which are certified"
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Business Assets with Owners",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.description": "Well governed assets",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.Domain",
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.SubDomain"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business asset related to stakeholder"
+      }
+    }
+  ],
+  "layout": [],
+  "saved_searches": {},
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "adoption-kpi",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [
+      "Flat files",
+      "Hierarchical/XML",
+      "Power BI",
+      "RDBMS",
+      "Tableau"
+    ],
+    "requirements": [
+      "adoption metrics",
+      "usage"
+    ],
+    "locale": "en",
+    "note": null
+  }
+}

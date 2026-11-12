@@ -1,0 +1,417 @@
+{
+  "cdgc_release": "IDMC-202610-10M",
+  "count": 18,
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboards": [
+    {
+      "name": "AI Governance",
+      "path": "dashboards/ai-governance/ai-governance.json",
+      "use_case": "ai-governance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Databricks",
+        "Flat files",
+        "RDBMS"
+      ],
+      "requirements": [
+        "AI inventory",
+        "model risk",
+        "AI oversight"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 24,
+      "saved_searches": 0,
+      "description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+      "note": null
+    },
+    {
+      "name": "AI Inventories",
+      "path": "dashboards/ai-governance/ai-inventories.json",
+      "use_case": "ai-governance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [],
+      "requirements": [
+        "AI system inventory",
+        "EU AI Act"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 14,
+      "saved_searches": 2,
+      "description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+      "note": null
+    },
+    {
+      "name": "AI Governance - Risk View",
+      "path": "dashboards/ai-governance/ai-governance-risk-view.json",
+      "use_case": "ai-governance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [],
+      "requirements": [
+        "AI risk classification",
+        "high-risk models"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 11,
+      "saved_searches": 2,
+      "description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+      "note": "uses reusable saved searches"
+    },
+    {
+      "name": "AI Compliance - AICO Dashboard v2",
+      "path": "dashboards/ai-governance/ai-compliance-aico-dashboard-v2.json",
+      "use_case": "ai-governance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [],
+      "requirements": [
+        "AI compliance",
+        "regulatory"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 11,
+      "saved_searches": 1,
+      "description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+      "note": null
+    },
+    {
+      "name": "Data Governance Dashboard",
+      "path": "dashboards/data-governance-home/data-governance-dashboard.json",
+      "use_case": "data-governance-home",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Databricks",
+        "Flat files",
+        "Hierarchical/XML",
+        "IICS",
+        "Power BI",
+        "RDBMS"
+      ],
+      "requirements": [
+        "home page",
+        "business + technical assets",
+        "DQ overview"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 15,
+      "saved_searches": 0,
+      "description": "This is your home page for Data Governance and Catalog. You can customize the widgets on this page. You can also create new dashboards, add widgets for particular governance themes, and set one of the dashboards as the default home page whe",
+      "note": null
+    },
+    {
+      "name": "Data Quality and Observability",
+      "path": "dashboards/data-quality/data-quality-and-observability.json",
+      "use_case": "data-quality",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "RDBMS"
+      ],
+      "requirements": [
+        "DQ scoring",
+        "data observability"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 23,
+      "saved_searches": 1,
+      "description": "",
+      "note": null
+    },
+    {
+      "name": "Global Data Quality and Observability",
+      "path": "dashboards/data-quality/global-data-quality-and-observability.json",
+      "use_case": "data-quality",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "Hierarchical/XML",
+        "IICS",
+        "RDBMS"
+      ],
+      "requirements": [
+        "enterprise DQ",
+        "observability"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 16,
+      "saved_searches": 0,
+      "description": "",
+      "note": null
+    },
+    {
+      "name": "Data Quality & Governance Dashboard",
+      "path": "dashboards/data-quality/data-quality-governance-dashboard.json",
+      "use_case": "data-quality",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "IICS",
+        "RDBMS",
+        "Tableau"
+      ],
+      "requirements": [
+        "DQ + governance",
+        "rules & results"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 18,
+      "saved_searches": 0,
+      "description": "",
+      "note": null
+    },
+    {
+      "name": "ERP Modernization - DQ Dashboard",
+      "path": "dashboards/data-quality/erp-modernization-dq-dashboard.json",
+      "use_case": "data-quality",
+      "industry": [
+        "Manufacturing",
+        "ERP"
+      ],
+      "source_systems": [
+        "Flat files",
+        "RDBMS"
+      ],
+      "requirements": [
+        "ERP migration DQ",
+        "reconciliation"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 11,
+      "saved_searches": 2,
+      "description": "",
+      "note": null
+    },
+    {
+      "name": "Observation et Qualité de données - FR",
+      "path": "dashboards/data-quality/observation-et-qualit-de-donn-es-fr.json",
+      "use_case": "data-quality",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "Hierarchical/XML",
+        "IICS",
+        "RDBMS"
+      ],
+      "requirements": [
+        "DQ & observability (French)"
+      ],
+      "locale": "fr",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 13,
+      "saved_searches": 0,
+      "description": "",
+      "note": null
+    },
+    {
+      "name": "Metadata Health & Curation",
+      "path": "dashboards/governance-curation/metadata-health-curation.json",
+      "use_case": "governance-curation",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Databricks",
+        "Flat files",
+        "Hierarchical/XML",
+        "IICS",
+        "Power BI",
+        "RDBMS",
+        "Tableau"
+      ],
+      "requirements": [
+        "metadata health",
+        "curation backlog"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 16,
+      "saved_searches": 1,
+      "description": "Dashboard containing assets to review & curate when needed",
+      "note": null
+    },
+    {
+      "name": "Curation Dashboard - 2",
+      "path": "dashboards/governance-curation/curation-dashboard-2.json",
+      "use_case": "governance-curation",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Databricks",
+        "Flat files",
+        "Hierarchical/XML",
+        "Power BI",
+        "RDBMS",
+        "Tableau"
+      ],
+      "requirements": [
+        "CLAIRE curation",
+        "classification review"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 14,
+      "saved_searches": 0,
+      "description": "Dashboard containing assets to review & curate when needed",
+      "note": null
+    },
+    {
+      "name": "CLAIRE - Governance@Scale",
+      "path": "dashboards/governance-curation/claire-governance-scale.json",
+      "use_case": "governance-curation",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "RDBMS"
+      ],
+      "requirements": [
+        "AI-assisted governance",
+        "recommendations"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 8,
+      "saved_searches": 0,
+      "description": "",
+      "note": null
+    },
+    {
+      "name": "Unstructured Data Governance",
+      "path": "dashboards/governance-curation/unstructured-data-governance.json",
+      "use_case": "governance-curation",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [],
+      "requirements": [
+        "unstructured data",
+        "document governance"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 8,
+      "saved_searches": 5,
+      "description": "",
+      "note": "uses reusable saved searches"
+    },
+    {
+      "name": "Data Privacy @DPO",
+      "path": "dashboards/privacy-compliance/data-privacy-dpo.json",
+      "use_case": "privacy-compliance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "Hierarchical/XML",
+        "RDBMS"
+      ],
+      "requirements": [
+        "privacy",
+        "DPO view",
+        "personal data"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 9,
+      "saved_searches": 0,
+      "description": "Widgets to get insight on sensitive data assets",
+      "note": null
+    },
+    {
+      "name": "GDPR Regulation",
+      "path": "dashboards/privacy-compliance/gdpr-regulation.json",
+      "use_case": "privacy-compliance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [],
+      "requirements": [
+        "GDPR",
+        "regulation coverage"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 7,
+      "saved_searches": 1,
+      "description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+      "note": null
+    },
+    {
+      "name": "User Adoption",
+      "path": "dashboards/adoption-kpi/user-adoption.json",
+      "use_case": "adoption-kpi",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Flat files",
+        "Hierarchical/XML",
+        "Power BI",
+        "RDBMS",
+        "Tableau"
+      ],
+      "requirements": [
+        "adoption metrics",
+        "usage"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 8,
+      "saved_searches": 0,
+      "description": "Sample dashboard to mesure catalog adoption",
+      "note": null
+    },
+    {
+      "name": "Data Scientists - Sales LOB Dashboard v2",
+      "path": "dashboards/line-of-business/data-scientists-sales-lob-dashboard-v2.json",
+      "use_case": "line-of-business",
+      "industry": [
+        "Retail",
+        "Sales"
+      ],
+      "source_systems": [
+        "Databricks",
+        "Power BI"
+      ],
+      "requirements": [
+        "data science",
+        "sales LOB",
+        "model inputs"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "widgets": 10,
+      "saved_searches": 0,
+      "description": "",
+      "note": null
+    }
+  ]
+}

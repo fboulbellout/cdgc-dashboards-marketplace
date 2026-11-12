@@ -1,0 +1,165 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "GDPR Regulation",
+    "core.description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": null
+  },
+  "widgets": [
+    {
+      "order": 1,
+      "widgetType": "TicketsWidget",
+      "fullType": "com.infa.application.dashboard.TicketsWidget",
+      "attributes": {
+        "core.name": "My Tasks",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.description": "AI Regulation tickets",
+        "com.infa.application.dashboard.ticketStakeholderType": "Creator",
+        "com.infa.application.dashboard.gridColumns": [
+          "com.infa.ccgf.models.issueManagement.issueTitle",
+          "com.infa.ccgf.models.issueManagement.issueStatus",
+          "com.infa.ccgf.models.issueManagement.assetName"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "AI Regulations To Comply",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.description": "list of currently documented regulations around AI/ML/LLM",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description",
+          "core.assetLifecycle"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "policy related to policy  \"AI/ML Regulations\""
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Models Using PII Data Not Classified as High Risk",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description",
+          "core.stakeholderIdentity",
+          "core.modifiedOn"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "5531d6bf-94ab-4cda-a741-c1c3dc95975c"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "AI models with 'Risk Category' 'Unknown'",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.description": "List all AI Models not compliant with EU Act regulation",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": " AI models with 'Risk Category' 'Unknown'"
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Data Quality Scores - AI/ML Input DataSets",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "Data Quality Scores for dataset used as input for  AI/ML models",
+        "com.infa.application.dashboard.searchQuery": "AI"
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "AI Models without stakeholder",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.description": "list of AI/ML mode used in the company without any stakeholder",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "AI model without stakeholder",
+        "com.infa.application.dashboard.groupBy": "core.assetLifecycle"
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "PII Business Assets Related To AI/ML Models",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.AIModel.AIModel",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Metric"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business assets related to policies *pii*"
+      }
+    }
+  ],
+  "layout": [],
+  "saved_searches": {
+    "5531d6bf-94ab-4cda-a741-c1c3dc95975c": {
+      "core.name": "High Risk AI Models Not Classified as High Risk",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": " AI models with 'Risk Category'  not in ('High') and related to (dataset,technical dataset) related to data element related to business terms related to policy 'Personally Identifiable Information*'",
+      "filters": null,
+      "sortOrder": null
+    }
+  },
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "privacy-compliance",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [],
+    "requirements": [
+      "GDPR",
+      "regulation coverage"
+    ],
+    "locale": "en",
+    "note": null
+  }
+}

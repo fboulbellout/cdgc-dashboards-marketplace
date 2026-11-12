@@ -1,0 +1,225 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "Observation et Qualité de données - FR",
+    "core.description": "",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": true
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Catalogue Technique",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.Resource",
+          "com.infa.odin.models.relational.Schema",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.file.hierarchical.HierarchicalFile",
+          "com.infa.odin.models.IICS.V2.MappingTask",
+          "com.infa.odin.models.relational.Column"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "technical asset"
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Catalogue Métier",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.Domain",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.AIModel.AIModel",
+          "com.infa.ccgf.models.governance.System",
+          "com.infa.ccgf.models.governance.SubDomain"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "business assets"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Score Global DQ",
+        "com.infa.application.dashboard.visualizationType": "PieChart"
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Score DQ RH",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "dq rule with threshold result in (good, acceptable, 'not acceptable') and related to data element in catalog source \"Agent local files for File DataObs\""
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "DataObservabilityWidget",
+      "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
+      "attributes": {
+        "core.name": "Data Lake Observability",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.groupBy": "com.infa.dataobservability.anomalies.metric",
+        "com.infa.application.dashboard.assetIds": [
+          "bb5f672a-1018-45e7-868f-d113ebbfa887",
+          "088b51a7-a178-4c0b-ba84-90271a80b76a",
+          "e9f8b329-198c-4a82-abfa-782da44afb57"
+        ]
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "DataObservabilityWidget",
+      "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
+      "attributes": {
+        "core.name": "File System Observability",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.groupBy": "com.infa.dataobservability.anomalies.metric",
+        "com.infa.application.dashboard.assetIds": [
+          "109a6231-30f2-41b5-8e2a-0f9f1535df5c",
+          "1dbf5e08-1967-44d4-ac53-bcf9d4ab3e15"
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Pipeline Observability",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "dq rule with dimension in (\"Pipeline\")  and related to data element related through core.DataFlow to any and in catalog source \"Agent local files\""
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "DQ Score par dimension",
+        "com.infa.application.dashboard.visualizationType": "ScoreChart"
+      }
+    },
+    {
+      "order": 8,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Data Discovery @Scale",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.file.flat.FlatFile",
+          "com.infa.odin.models.relational.Column"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "technical asset which are profiled"
+      }
+    },
+    {
+      "order": 9,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "DQ @Scale - DQ Automation",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.RuleInstance"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "Data Quality Rule Template,Data Quality Rule Occurrence"
+      }
+    },
+    {
+      "order": 10,
+      "widgetType": "DataObservabilityWidget",
+      "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
+      "attributes": {
+        "core.name": "DataObs File Monitoring By Severity",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.groupBy": "com.infa.dataobservability.anomalies.severity",
+        "com.infa.application.dashboard.assetIds": [
+          "1dbf5e08-1967-44d4-ac53-bcf9d4ab3e15"
+        ]
+      }
+    },
+    {
+      "order": 11,
+      "widgetType": "NoticeBoardWidget",
+      "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
+      "attributes": {
+        "core.name": "Monitoring Samples",
+        "com.infa.application.dashboard.noticeBoardContent": "<p>DQ At Scale : <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Email Address</a></p><p>File Monitoring - Supervised : </p><ul><li><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Freshenss &amp; duplicate issue </a></li><li><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Schema validation issue</a></li><li><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">row count issue</a></li><li><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Data Freshness issue</a></li></ul><p>Pipeline Monitoring</p><ul><li><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Successfull Pipeline</a></li><li>Failed - <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Post Command</a></li><li>Failed - <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">DB User Locked</a></li></ul><p>Lineage Overlay : <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">YOY Growth Revenue Report</a></p><p>Data Discovery : <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Customer Master</a> : profiling, DQ occurence / scorecard, 360 view</p><p><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">PII 360 View</a> : </p><p><a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Data Cleansing / remediation</a> : </p><p>Aditional Topic : MCC / Bulk Upload / <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">DQ Rule</a> / <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Adv Profiling</a> / DQ Aggregation / <a rel=\"noopener noreferrer\" href=\"[CDGC-LINK]\" target=\"_blank\">Process Map</a></p>"
+      }
+    },
+    {
+      "order": 12,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Supervised File Monitoring",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "dq rule with dimension in (\"File Monitoring\") and related to data element in catalog source \"Agent local files for File DataObs\""
+      }
+    }
+  ],
+  "layout": [],
+  "saved_searches": {},
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "data-quality",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [
+      "Flat files",
+      "Hierarchical/XML",
+      "IICS",
+      "RDBMS"
+    ],
+    "requirements": [
+      "DQ & observability (French)"
+    ],
+    "locale": "fr",
+    "note": null
+  }
+}

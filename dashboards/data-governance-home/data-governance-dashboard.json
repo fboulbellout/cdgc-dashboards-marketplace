@@ -1,0 +1,422 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "Data Governance Dashboard",
+    "core.description": "This is your home page for Data Governance and Catalog. You can customize the widgets on this page. You can also create new dashboards, add widgets for particular governance themes, and set one of the dashboards as the default home page when you log in. To modify or remove that description, edit this dashboard.",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": null
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "NoticeBoardWidget",
+      "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
+      "attributes": {
+        "core.name": "📝 Dashboard Description 📝",
+        "com.infa.application.dashboard.noticeBoardContent": "<p>This dashboard will give oversights on <strong>business </strong>focused as well as<strong> technical </strong>assets </p><p> </p><p><strong>Business </strong>assets include: </p><p>·       Glossary Objects: </p><p>·       Domain </p><p>·       SubDomain </p><p>·       Business Term </p><p>·       Metric </p><p>·       Processes </p><p>·       Policies </p><p>·       Systems </p><p>·       Datasets </p><p>·       AI Models </p><p> </p><p><strong>Technical </strong>assets include: </p><p>·       Catalog Sources </p><p>·       Technical datasets </p><p>·       Columns </p><p>·       Calculations </p><p>·       Python notebook</p><p>·       ETL Jobs instances</p>"
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "👨🏻‍💼 Business Assets 👨🏻‍💼",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Domain",
+          "com.infa.ccgf.models.governance.SubDomain",
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.BusinessArea",
+          "com.infa.ccgf.models.governance.Regulation",
+          "com.infa.ccgf.models.AIModel.AIModel",
+          "com.infa.ccgf.models.governance.Project",
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.governance.Metric"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "business assets"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "🛠️ Technical Assets 🛠️",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.Resource",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.IICS.V2.Calculation",
+          "com.infa.odin.models.Databricks.Command",
+          "com.infa.odin.models.file.hierarchical.HierarchicalField",
+          "com.infa.odin.models.file.flat.FlatFile",
+          "com.infa.odin.models.file.hierarchical.xml.Element"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "Technical Assets"
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "TicketsWidget",
+      "fullType": "com.infa.application.dashboard.TicketsWidget",
+      "attributes": {
+        "core.name": "🔖 My Tickets 🔖",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.ticketStakeholderType": "Creator",
+        "com.infa.application.dashboard.gridColumns": [
+          "com.infa.ccgf.models.issueManagement.issueTitle",
+          "com.infa.ccgf.models.issueManagement.issueStatus",
+          "com.infa.ccgf.models.issueManagement.assetName"
+        ],
+        "com.infa.application.dashboard.includeCurrentUser": false,
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process"
+        ],
+        "com.infa.application.dashboard.rowCount": 10,
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "ClaireActivityWidget",
+      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
+      "attributes": {
+        "core.name": "🧠 Claire Curation Recommendations 🧠",
+        "com.infa.application.dashboard.recommendationTypes": [
+          "CLASSIFICATION",
+          "GLOSSARY_TERM_ASSOCIATION"
+        ]
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "♛ Glossaries w/o Owners ♛",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Domain"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "ALL without Stakeholder",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "🔐 PII Data Elements 🔐",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.file.hierarchical.HierarchicalField",
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.file.flat.FlatField",
+          "com.infa.odin.models.relational.Calculation"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "data elements related to business terms related to policies *pii*",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "🎯 Consolidated DQ Score 🎯",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 8,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "🛒 DQ Score For Sales Data Domain 🛒",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "Sales"
+      }
+    },
+    {
+      "order": 9,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "📚 Business assets (besides glossary) 📚",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.System",
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "*",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 10,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "⚙️ Business Processes Using Personal Data ⚙️",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Process"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "process related to policy 'Privacy of Personal Data Policy'",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 11,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "🔄 DQ Automation 🔄",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "core.description": "+DQ Profile Run + DQ Result",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.RuleInstance",
+          "com.infa.ccgf.models.governance.RuleTemplate"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "*",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 12,
+      "widgetType": "JobsWidget",
+      "fullType": "com.infa.application.dashboard.JobsWidget",
+      "attributes": {
+        "core.name": "⚙️ All Jobs ⚙️",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.rowCount": 25
+      }
+    },
+    {
+      "order": 13,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "Generated Classifications",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.curationStatus",
+          "core.promotedToClassification"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.Classification"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "generated classifications",
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.groupBy": "core.curationStatus"
+      }
+    },
+    {
+      "order": 14,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.name": "Promoted generated classifications",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.modifiedOn"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.Classification"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "generated classifications which are promoted",
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.groupBy": "core.assetLifecycle"
+      }
+    }
+  ],
+  "layout": [
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 0,
+      "order": 1
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 8,
+      "y": 0,
+      "order": 2
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 0,
+      "y": 6,
+      "order": 3
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 4,
+      "y": 6,
+      "order": 4
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 8,
+      "y": 6,
+      "order": 5
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 11,
+      "order": 6
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 11,
+      "order": 7
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 8,
+      "y": 17,
+      "order": 8
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 17,
+      "order": 9
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 4,
+      "y": 17,
+      "order": 10
+    },
+    {
+      "h": 6,
+      "w": 4,
+      "x": 8,
+      "y": 11,
+      "order": 11
+    },
+    {
+      "h": 4,
+      "w": 4,
+      "x": 0,
+      "y": 23,
+      "order": 12
+    },
+    {
+      "h": 9,
+      "w": 4,
+      "x": 4,
+      "y": 23,
+      "order": 13
+    },
+    {
+      "h": 9,
+      "w": 4,
+      "x": 8,
+      "y": 23,
+      "order": 14
+    }
+  ],
+  "saved_searches": {},
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "data-governance-home",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [
+      "Databricks",
+      "Flat files",
+      "Hierarchical/XML",
+      "IICS",
+      "Power BI",
+      "RDBMS"
+    ],
+    "requirements": [
+      "home page",
+      "business + technical assets",
+      "DQ overview"
+    ],
+    "locale": "en",
+    "note": null
+  }
+}

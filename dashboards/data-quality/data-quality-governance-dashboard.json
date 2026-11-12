@@ -1,0 +1,465 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "Data Quality & Governance Dashboard",
+    "core.description": "",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": null
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "HelpWidget",
+      "fullType": "com.infa.application.dashboard.HelpWidget",
+      "attributes": {
+        "core.name": "Help for Getting Started",
+        "core.description": ""
+      }
+    },
+    {
+      "order": 0,
+      "widgetType": "ClaireActivityWidget",
+      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
+      "attributes": {
+        "core.name": "CLAIRE suggestions",
+        "com.infa.application.dashboard.recommendationTypes": [
+          "CLASSIFICATION",
+          "GLOSSARY_TERM_ASSOCIATION",
+          "GENERATED_CLASSIFICATION"
+        ]
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Business Assets",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "core.description": "",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Domain",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.System",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.AIModel.AIModel"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business assets"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Technical Assets",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "core.description": "d",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.warehouse.sapbwhana.InfoObject",
+          "com.infa.odin.models.relational.Table",
+          "core.Resource",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.relational.ProcedureInstance",
+          "com.infa.odin.models.warehouse.sapbwhana.CompositeProvider",
+          "com.infa.odin.models.relational.Schema",
+          "com.infa.odin.models.Tableau.Worksheet",
+          "com.infa.odin.models.warehouse.sapbw.QueryField",
+          "com.infa.odin.models.IICS.V2.Calculation"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "*",
+        "com.infa.application.dashboard.savedSearchId": ""
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "TicketsWidget",
+      "fullType": "com.infa.application.dashboard.TicketsWidget",
+      "attributes": {
+        "core.name": "My Tickets",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.ticketStakeholderType": "Creator",
+        "com.infa.application.dashboard.gridColumns": [
+          "com.infa.ccgf.models.issueManagement.issueTitle",
+          "com.infa.ccgf.models.issueManagement.issueStatus",
+          "com.infa.ccgf.models.issueManagement.assetName"
+        ],
+        "com.infa.application.dashboard.includeCurrentUser": false,
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "*"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Data Quality - Rule occurence",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.searchQuery": "Data Quality Rule Occurrence,Data Quality Rule Template"
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Policies & Processes without Owners",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "(Policies,Process) without stakeholders"
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Data Quality-  All Assets",
+        "com.infa.application.dashboard.visualizationType": "ScoreChart",
+        "com.infa.application.dashboard.searchQuery": "technical asset which are profiled"
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "ClaireActivityWidget",
+      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
+      "attributes": {
+        "core.name": "CLAIRE Curation Suggestion",
+        "com.infa.application.dashboard.recommendationTypes": [
+          "CLASSIFICATION",
+          "GLOSSARY_TERM_ASSOCIATION"
+        ]
+      }
+    },
+    {
+      "order": 8,
+      "widgetType": "DataQualityWidget",
+      "fullType": "com.infa.application.dashboard.DataQualityWidget",
+      "attributes": {
+        "core.name": "Data Quality Rules profiled",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.searchQuery": "profiled"
+      }
+    },
+    {
+      "order": 9,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "CDE With Low Data Quality Score",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.description": "data element associated to CDE business term with low dq score",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.relational.ViewColumn",
+          "com.infa.odin.models.file.flat.FlatField",
+          "com.infa.odin.models.SAPBO.AliasTable"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "(data element related to business terms which are critical data element) related to data quality rule occurrence with threshold result \"not acceptable\""
+      }
+    },
+    {
+      "order": 10,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Profiled Tables/Files",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.file.flat.FlatFile"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "(tables,files) which are profiled"
+      }
+    },
+    {
+      "order": 11,
+      "widgetType": "JobsWidget",
+      "fullType": "com.infa.application.dashboard.JobsWidget",
+      "attributes": {
+        "core.name": "My Jobs",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "core.description": "",
+        "com.infa.application.dashboard.rowCount": 25
+      }
+    },
+    {
+      "order": 12,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Associated Terms",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.description": "Terms associated with Rebecca Drake",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business terms with stakeholder @Unity_Retail_v2_Rebecca_Drake"
+      }
+    },
+    {
+      "order": 13,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Business Term by Critical Data Element",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.description": "",
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business terms",
+        "com.infa.application.dashboard.groupBy": "com.infa.ccgf.models.governance.isCDE"
+      }
+    },
+    {
+      "order": 14,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Most Used with Transformations",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.View"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "V_FACT_ALL_SALES_ORDERS_UPDATED"
+      }
+    },
+    {
+      "order": 15,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Recent Searches",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.DataSet"
+        ],
+        "com.infa.application.dashboard.rowCount": 5,
+        "com.infa.application.dashboard.searchQuery": "Sales Data"
+      }
+    },
+    {
+      "order": 16,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Profiled Views & Tables",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.relational.Column"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "*",
+        "com.infa.application.dashboard.groupBy": "core.profiled"
+      }
+    }
+  ],
+  "layout": [
+    {
+      "h": 5,
+      "w": 3,
+      "x": 0,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 5,
+      "w": 6,
+      "x": 0,
+      "y": 5,
+      "order": 1
+    },
+    {
+      "h": 5,
+      "w": 6,
+      "x": 6,
+      "y": 5,
+      "order": 2
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 0,
+      "y": 10,
+      "order": 3
+    },
+    {
+      "h": 5,
+      "w": 5,
+      "x": 7,
+      "y": 0,
+      "order": 4
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 3,
+      "y": 0,
+      "order": 5
+    },
+    {
+      "h": 4,
+      "w": 4,
+      "x": 0,
+      "y": 15,
+      "order": 6
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 4,
+      "y": 10,
+      "order": 7
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 8,
+      "y": 10,
+      "order": 8
+    },
+    {
+      "h": 4,
+      "w": 4,
+      "x": 0,
+      "y": 19,
+      "order": 9
+    },
+    {
+      "h": 4,
+      "w": 4,
+      "x": 4,
+      "y": 15,
+      "order": 10
+    },
+    {
+      "h": 4,
+      "w": 4,
+      "x": 8,
+      "y": 15,
+      "order": 11
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 0,
+      "y": 23,
+      "order": 12
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 4,
+      "y": 19,
+      "order": 13
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 8,
+      "y": 19,
+      "order": 14
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 8,
+      "y": 24,
+      "order": 15
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 4,
+      "y": 24,
+      "order": 16
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "x": 0,
+      "y": 28,
+      "order": 0
+    }
+  ],
+  "saved_searches": {},
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "data-quality",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [
+      "Flat files",
+      "IICS",
+      "RDBMS",
+      "Tableau"
+    ],
+    "requirements": [
+      "DQ + governance",
+      "rules & results"
+    ],
+    "locale": "en",
+    "note": null
+  }
+}

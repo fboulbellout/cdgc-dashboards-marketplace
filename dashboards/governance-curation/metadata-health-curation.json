@@ -1,0 +1,404 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "Metadata Health & Curation",
+    "core.description": "Dashboard containing assets to review & curate when needed",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": null
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Metadata Inventory - Business Assets",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.SubDomain",
+          "com.infa.ccgf.models.AIModel.AIModel",
+          "com.infa.ccgf.models.governance.Project",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.ccgf.models.governance.BusinessArea",
+          "com.infa.ccgf.models.governance.LegalEntity"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "Business assets"
+      }
+    },
+    {
+      "order": 1,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Metadata Inventory - Tech Assets",
+        "com.infa.application.dashboard.visualizationType": "Counts",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.file.hierarchical.HierarchicalField",
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.IICS.V2.Calculation",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.relational.Schema",
+          "core.Resource",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.odin.models.Databricks.NotebookDefinition",
+          "com.infa.odin.models.relational.PrimaryKey"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "",
+        "com.infa.application.dashboard.searchQuery": "technical assets"
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Business Assets Without Owner",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.RuleTemplate"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "business asset without stakeholder"
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Technical Assets Without Owner",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.file.File",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.Databricks.NotebookDefinition",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.odin.models.relational.Database",
+          "com.infa.odin.models.file.amazons3.Bucket"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all without stakeholder"
+      }
+    },
+    {
+      "order": 4,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Technical Assets Without Business Terms",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.lakehouse.LakehouseTable",
+          "com.infa.odin.models.relational.View",
+          "com.infa.odin.models.file.File",
+          "com.infa.odin.models.file.hierarchical.HierarchicalFile"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "file,table,view,column not related to business term"
+      }
+    },
+    {
+      "order": 5,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Critical Assets without Stakeholders",
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.description": "assets links to critical data eleement terms - they should have stakeholders",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.RuleTemplate",
+          "com.infa.odin.models.PowerBI.Cloud.Field",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.ccgf.models.governance.SubDomain"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "(all related to business terms which are critical data element) not related to stakeholder"
+      }
+    },
+    {
+      "order": 6,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Systems Not updated the last 60 days",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "core.description": "List of systems not updated last 60 days. We should rerun the scan to ensure metadata in the catalog reflect system content",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.resourceType",
+          "core.stakeholderIdentity"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.Resource"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "Catalog source not updated within last 60 days and not with resource type \"REFERENCE CATALOG SOURCE\""
+      }
+    },
+    {
+      "order": 7,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Technical Datasets Not Certified",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.DataSet",
+          "com.infa.odin.models.AzureDataFactory.Dataset",
+          "com.infa.odin.models.PowerBI.Cloud.Dataset",
+          "com.infa.odin.models.relational.Table",
+          "com.infa.odin.models.file.File"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "technical datasets which are not certified"
+      }
+    },
+    {
+      "order": 8,
+      "widgetType": "ClaireActivityWidget",
+      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
+      "attributes": {
+        "core.name": "CLAIRE Curation Suggestions",
+        "core.description": "AI/ML Based curation suggestions",
+        "com.infa.application.dashboard.recommendationTypes": [
+          "CLASSIFICATION",
+          "GLOSSARY_TERM_ASSOCIATION"
+        ]
+      }
+    },
+    {
+      "order": 9,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Rated Assets Without Stakeholder",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "Rated assets potentially important/critical assets and should have stakeholders",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Table",
+          "com.infa.ccgf.models.governance.Metric",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.ccgf.models.governance.System"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all rated within last 90 days and not related to stakeholder"
+      }
+    },
+    {
+      "order": 10,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "CDE With Low DQ Score",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "DQ scores related to business assets categorized as critical for the business",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.file.flat.FlatField",
+          "com.infa.odin.models.relational.ViewColumn"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "(data element related to business terms which are critical data element) related to data quality rule occurrence with threshold result \"not acceptable\""
+      }
+    },
+    {
+      "order": 11,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Items Rated the Last 3 Months",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "core.Resource",
+          "com.infa.ccgf.models.governance.DataSet",
+          "com.infa.odin.models.application.saps4hana.SapTable",
+          "com.infa.odin.models.application.saps4hana.SapView"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all rated within last 90 days"
+      }
+    },
+    {
+      "order": 12,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "New Technical Assets Added the Last 90 Days",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.file.hierarchical.HierarchicalField",
+          "com.infa.odin.models.file.flat.FlatField",
+          "com.infa.odin.models.file.File",
+          "com.infa.odin.models.relational.Column",
+          "com.infa.odin.models.PowerBI.Cloud.Report",
+          "com.infa.odin.models.relational.Table",
+          "core.Resource",
+          "com.infa.ccgf.models.governance.RuleTemplate"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all Created On within last 90 days"
+      }
+    },
+    {
+      "order": 13,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "New Business Assets Created In the Last 120 days",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.ccgf.models.governance.BusinessTerm",
+          "com.infa.ccgf.models.governance.Policy",
+          "com.infa.ccgf.models.governance.Process",
+          "com.infa.ccgf.models.governance.Domain"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "all assets created within last 120 day"
+      }
+    },
+    {
+      "order": 14,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Technical Assets changed the last 14 days",
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.description": "Technical Assets changed the last 14 days",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.Tableau.Worksheet",
+          "com.infa.odin.models.Tableau.Dashboard",
+          "com.infa.odin.models.Tableau.Workbook",
+          "com.infa.odin.models.relational.Schema",
+          "com.infa.odin.models.relational.View"
+        ],
+        "com.infa.application.dashboard.rowCount": 10,
+        "com.infa.application.dashboard.searchQuery": "all assets updated within last 14 day"
+      }
+    },
+    {
+      "order": 15,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "core.name": "Relational Tables Without Lineage",
+        "com.infa.application.dashboard.visualizationType": "GridView",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.stakeholderIdentity"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "*"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.savedSearchId": "84d07db0-159f-4fd8-a4bb-57388b2508b7",
+        "com.infa.application.dashboard.searchQuery": ""
+      }
+    }
+  ],
+  "layout": [],
+  "saved_searches": {
+    "84d07db0-159f-4fd8-a4bb-57388b2508b7": {
+      "core.name": "Relational Tables Without Lineage",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "table not related through core.DataFlow to any",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+      ],
+      "sortOrder": null
+    }
+  },
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "governance-curation",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [
+      "Databricks",
+      "Flat files",
+      "Hierarchical/XML",
+      "IICS",
+      "Power BI",
+      "RDBMS",
+      "Tableau"
+    ],
+    "requirements": [
+      "metadata health",
+      "curation backlog"
+    ],
+    "locale": "en",
+    "note": null
+  }
+}

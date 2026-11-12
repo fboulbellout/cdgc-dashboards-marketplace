@@ -1,0 +1,280 @@
+{
+  "schema": "cdgc-dashboard-export/v1",
+  "dashboard": {
+    "core.name": "Unstructured Data Governance",
+    "core.description": "",
+    "dashboardType": null,
+    "autoShareIncludedSavedSearches": true
+  },
+  "widgets": [
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.name": "Document Types",
+        "core.description": "Documents types with identifiable features and classification.",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.DocumentClassification"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "f177575e-f917-4c7e-8f5e-047f4ec10033"
+      }
+    },
+    {
+      "order": 0,
+      "widgetType": "ClaireActivityWidget",
+      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
+      "attributes": {
+        "core.name": "Recommendations",
+        "core.description": "Data Classification and Glossary recommendations ",
+        "com.infa.application.dashboard.recommendationTypes": [
+          "CLASSIFICATION",
+          "GLOSSARY_TERM_ASSOCIATION",
+          "GENERATED_CLASSIFICATION"
+        ]
+      }
+    },
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.name": "Documents without stakeholders",
+        "core.description": "PDF Files without stakeholders",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.unstructuredv2.file.pdf.PDFFile"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "d37166ab-8112-46fe-8782-840721ce6149",
+        "com.infa.application.dashboard.groupBy": ""
+      }
+    },
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.name": "Document Classifications",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "core.DocumentClassification"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "f177575e-f917-4c7e-8f5e-047f4ec10033"
+      }
+    },
+    {
+      "order": 0,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.name": "Documents contains PII Data",
+        "core.description": "List of Documents contains PII Data",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.modifiedOn"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "com.infa.odin.models.unstructuredv2.file.pdf.PDFFile"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "a7c9287f-b1b9-4619-8216-782e73863d6c"
+      }
+    },
+    {
+      "order": 0,
+      "widgetType": "NoticeBoardWidget",
+      "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
+      "attributes": {
+        "core.name": "Overview",
+        "com.infa.application.dashboard.noticeBoardContent": "Tracks classification and stewardship of unstructured documents across our cloud stores. Use this dashboard to monitor document types, find files without assigned stakeholders, and surface PDFs that contain PII—including identity applications, tax returns, insurance policies, and service contracts."
+      }
+    },
+    {
+      "order": 2,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "PieChart",
+        "core.name": "US Individual Income tax returns without stakeholders",
+        "core.description": "",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.stakeholderIdentity"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "*"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "0c0e4a80-d8f4-40e6-b104-d9d7f52849d6"
+      }
+    },
+    {
+      "order": 3,
+      "widgetType": "SearchWidget",
+      "fullType": "com.infa.application.dashboard.SearchWidget",
+      "attributes": {
+        "com.infa.application.dashboard.visualizationType": "BarChart",
+        "core.name": "unstructured files Modified within last 90 days",
+        "core.description": "",
+        "com.infa.application.dashboard.gridColumns": [
+          "core.name",
+          "core.description"
+        ],
+        "com.infa.application.dashboard.assetTypes": [
+          "*"
+        ],
+        "com.infa.application.dashboard.rowCount": 25,
+        "com.infa.application.dashboard.searchQuery": "",
+        "com.infa.application.dashboard.savedSearchId": "54581a71-11d8-4a2d-acd2-93406f0f5db0"
+      }
+    }
+  ],
+  "layout": [
+    {
+      "h": 6,
+      "w": 3,
+      "x": 6,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 3,
+      "x": 3,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 3,
+      "x": 0,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 3,
+      "x": 9,
+      "y": 0,
+      "order": 0
+    },
+    {
+      "h": 4,
+      "w": 12,
+      "x": 0,
+      "y": 6,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 3,
+      "x": 0,
+      "y": 10,
+      "order": 0
+    },
+    {
+      "h": 6,
+      "w": 3,
+      "x": 3,
+      "y": 10,
+      "order": 2
+    },
+    {
+      "h": 6,
+      "w": 6,
+      "x": 6,
+      "y": 10,
+      "order": 3
+    }
+  ],
+  "saved_searches": {
+    "0c0e4a80-d8f4-40e6-b104-d9d7f52849d6": {
+      "core.name": "unstructured files classified as Document classification \"US Individual Income tax returns\"  and without stakeholders",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "unstructured files classified as Document classification \"US Individual Income tax returns\"  and without stakeholders",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+      ],
+      "sortOrder": null
+    },
+    "54581a71-11d8-4a2d-acd2-93406f0f5db0": {
+      "core.name": "unstructured file with Modified On within last 90 days",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "unstructured file with Modified On within last 90 days",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+      ],
+      "sortOrder": null
+    },
+    "d37166ab-8112-46fe-8782-840721ce6149": {
+      "core.name": "unstructured files without stakeholders",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "unstructured files without stakeholders",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+      ],
+      "sortOrder": null
+    },
+    "a7c9287f-b1b9-4619-8216-782e73863d6c": {
+      "core.name": "unstructured files related to Data Entity classification PII",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "unstructured files related to Data Entity classification PII",
+      "filters": [
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+      ],
+      "sortOrder": null
+    },
+    "f177575e-f917-4c7e-8f5e-047f4ec10033": {
+      "core.name": "Document Classifications",
+      "core.description": "",
+      "core.origin": "cdgc-app",
+      "query": "Classifications",
+      "filters": [
+        "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"core.DocumentClassification\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Document Classification\"]}",
+        "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+      ],
+      "sortOrder": null
+    }
+  },
+  "warnings": [],
+  "cdgc_release": "IDMC-202610-10M",
+  "marketplace": {
+    "use_case": "governance-curation",
+    "industry": [
+      "Cross-industry"
+    ],
+    "source_systems": [],
+    "requirements": [
+      "unstructured data",
+      "document governance"
+    ],
+    "locale": "en",
+    "note": "uses reusable saved searches"
+  }
+}
