@@ -9,7 +9,7 @@
     {
       "name": "AI Governance",
       "path": "dashboards/ai-governance/ai-governance.json",
-      "preview": "dashboards/ai-governance/ai-governance.svg",
+      "preview": "dashboards/ai-governance/ai-governance.png",
       "use_case": "ai-governance",
       "industry": [
         "Cross-industry"
@@ -37,7 +37,7 @@
     {
       "name": "AI Inventories",
       "path": "dashboards/ai-governance/ai-inventories.json",
-      "preview": "dashboards/ai-governance/ai-inventories.svg",
+      "preview": "dashboards/ai-governance/ai-inventories.png",
       "use_case": "ai-governance",
       "industry": [
         "Cross-industry"
@@ -60,7 +60,7 @@
     {
       "name": "AI Governance - Risk View",
       "path": "dashboards/ai-governance/ai-governance-risk-view.json",
-      "preview": "dashboards/ai-governance/ai-governance-risk-view.svg",
+      "preview": "dashboards/ai-governance/ai-governance-risk-view.png",
       "use_case": "ai-governance",
       "industry": [
         "Cross-industry"
@@ -83,7 +83,7 @@
     {
       "name": "AI Compliance - AICO Dashboard v2",
       "path": "dashboards/ai-governance/ai-compliance-aico-dashboard-v2.json",
-      "preview": "dashboards/ai-governance/ai-compliance-aico-dashboard-v2.svg",
+      "preview": "dashboards/ai-governance/ai-compliance-aico-dashboard-v2.png",
       "use_case": "ai-governance",
       "industry": [
         "Cross-industry"
@@ -106,7 +106,7 @@
     {
       "name": "Data Governance Dashboard",
       "path": "dashboards/data-governance-home/data-governance-dashboard.json",
-      "preview": "dashboards/data-governance-home/data-governance-dashboard.svg",
+      "preview": "dashboards/data-governance-home/data-governance-dashboard.png",
       "use_case": "data-governance-home",
       "industry": [
         "Cross-industry"
@@ -137,7 +137,7 @@
     {
       "name": "Data Quality and Observability",
       "path": "dashboards/data-quality/data-quality-and-observability.json",
-      "preview": "dashboards/data-quality/data-quality-and-observability.svg",
+      "preview": "dashboards/data-quality/data-quality-and-observability.png",
       "use_case": "data-quality",
       "industry": [
         "Cross-industry"
@@ -163,7 +163,7 @@
     {
       "name": "Global Data Quality and Observability",
       "path": "dashboards/data-quality/global-data-quality-and-observability.json",
-      "preview": "dashboards/data-quality/global-data-quality-and-observability.svg",
+      "preview": "dashboards/data-quality/global-data-quality-and-observability.png",
       "use_case": "data-quality",
       "industry": [
         "Cross-industry"
@@ -191,7 +191,7 @@
     {
       "name": "Data Quality & Governance Dashboard",
       "path": "dashboards/data-quality/data-quality-governance-dashboard.json",
-      "preview": "dashboards/data-quality/data-quality-governance-dashboard.svg",
+      "preview": "dashboards/data-quality/data-quality-governance-dashboard.png",
       "use_case": "data-quality",
       "industry": [
         "Cross-industry"
@@ -219,7 +219,7 @@
     {
       "name": "ERP Modernization - DQ Dashboard",
       "path": "dashboards/data-quality/erp-modernization-dq-dashboard.json",
-      "preview": "dashboards/data-quality/erp-modernization-dq-dashboard.svg",
+      "preview": "dashboards/data-quality/erp-modernization-dq-dashboard.png",
       "use_case": "data-quality",
       "industry": [
         "Manufacturing",
@@ -246,7 +246,7 @@
     {
       "name": "Observation et Qualité de données - FR",
       "path": "dashboards/data-quality/observation-et-qualit-de-donn-es-fr.json",
-      "preview": "dashboards/data-quality/observation-et-qualit-de-donn-es-fr.svg",
+      "preview": "dashboards/data-quality/observation-et-qualit-de-donn-es-fr.png",
       "use_case": "data-quality",
       "industry": [
         "Cross-industry"
@@ -273,7 +273,7 @@
     {
       "name": "Metadata Health & Curation",
       "path": "dashboards/governance-curation/metadata-health-curation.json",
-      "preview": "dashboards/governance-curation/metadata-health-curation.svg",
+      "preview": "dashboards/governance-curation/metadata-health-curation.png",
       "use_case": "governance-curation",
       "industry": [
         "Cross-industry"
@@ -304,7 +304,7 @@
     {
       "name": "Curation Dashboard - 2",
       "path": "dashboards/governance-curation/curation-dashboard-2.json",
-      "preview": "dashboards/governance-curation/curation-dashboard-2.svg",
+      "preview": "dashboards/governance-curation/curation-dashboard-2.png",
       "use_case": "governance-curation",
       "industry": [
         "Cross-industry"
@@ -334,7 +334,7 @@
     {
       "name": "CLAIRE - Governance@Scale",
       "path": "dashboards/governance-curation/claire-governance-scale.json",
-      "preview": "dashboards/governance-curation/claire-governance-scale.svg",
+      "preview": "dashboards/governance-curation/claire-governance-scale.png",
       "use_case": "governance-curation",
       "industry": [
         "Cross-industry"
@@ -360,7 +360,7 @@
     {
       "name": "Unstructured Data Governance",
       "path": "dashboards/governance-curation/unstructured-data-governance.json",
-      "preview": "dashboards/governance-curation/unstructured-data-governance.svg",
+      "preview": "dashboards/governance-curation/unstructured-data-governance.png",
       "use_case": "governance-curation",
       "industry": [
         "Cross-industry"
@@ -383,7 +383,7 @@
     {
       "name": "Data Privacy @DPO",
       "path": "dashboards/privacy-compliance/data-privacy-dpo.json",
-      "preview": "dashboards/privacy-compliance/data-privacy-dpo.svg",
+      "preview": "dashboards/privacy-compliance/data-privacy-dpo.png",
       "use_case": "privacy-compliance",
       "industry": [
         "Cross-industry"
@@ -411,7 +411,7 @@
     {
       "name": "GDPR Regulation",
       "path": "dashboards/privacy-compliance/gdpr-regulation.json",
-      "preview": "dashboards/privacy-compliance/gdpr-regulation.svg",
+      "preview": "dashboards/privacy-compliance/gdpr-regulation.png",
       "use_case": "privacy-compliance",
       "industry": [
         "Cross-industry"
@@ -434,7 +434,7 @@
     {
       "name": "User Adoption",
       "path": "dashboards/adoption-kpi/user-adoption.json",
-      "preview": "dashboards/adoption-kpi/user-adoption.svg",
+      "preview": "dashboards/adoption-kpi/user-adoption.png",
       "use_case": "adoption-kpi",
       "industry": [
         "Cross-industry"
@@ -463,7 +463,7 @@
     {
       "name": "Data Scientists - Sales LOB Dashboard v2",
       "path": "dashboards/line-of-business/data-scientists-sales-lob-dashboard-v2.json",
-      "preview": "dashboards/line-of-business/data-scientists-sales-lob-dashboard-v2.svg",
+      "preview": "dashboards/line-of-business/data-scientists-sales-lob-dashboard-v2.png",
       "use_case": "line-of-business",
       "industry": [
         "Retail",
