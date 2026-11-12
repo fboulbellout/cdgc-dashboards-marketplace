@@ -659,6 +659,9 @@
   "saved_searches": {},
   "warnings": [],
   "cdgc_release": "IDMC-202610-10M",
+  "tested_releases": [
+    "IDMC-202610-10M"
+  ],
   "marketplace": {
     "use_case": "ai-governance",
     "industry": [

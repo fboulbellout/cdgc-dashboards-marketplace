@@ -1,0 +1,12 @@
+{
+  "latest_authoring_release": "IDMC-202610-10M",
+  "tested_releases": [
+    {
+      "release": "IDMC-202610-10M",
+      "status": "validated",
+      "date": "2026-11-12",
+      "notes": "initial publish; all 18 deployed & verified"
+    }
+  ],
+  "process": "At each new CDGC release, re-import each dashboard into a pod on that release, verify widgets+layout render, fix any format drift, then add the release to each dashboard's tested_releases and to this file."
+}
