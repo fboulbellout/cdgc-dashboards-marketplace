@@ -3,7 +3,7 @@
   "tested_releases": [
     "IDMC-202610-10M"
   ],
-  "count": 18,
+  "count": 19,
   "schema": "cdgc-dashboard-export/v1",
   "dashboards": [
     {
@@ -487,6 +487,36 @@
       "saved_searches": 0,
       "description": "",
       "note": null
+    },
+    {
+      "name": "AI Governance (new AI-Gov asset types)",
+      "path": "dashboards/ai-governance/ai-governance-new-asset-types.json",
+      "preview": null,
+      "use_case": "ai-governance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Databricks",
+        "AWS SageMaker",
+        "MCP",
+        "Salesforce Agentforce"
+      ],
+      "requirements": [
+        "EU AI Act",
+        "AI use-case tiering",
+        "AI risk & mitigation",
+        "AI agents & MCP inventory"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "tested_releases": [
+        "IDMC-202610-10M"
+      ],
+      "widgets": 16,
+      "saved_searches": 5,
+      "description": "Reference AI Governance dashboard built entirely on the new CDGC AI Governance asset types (Use Case, Risk, Mitigation, AI Model/System, AI Agent, MCP Server).",
+      "note": "Reference dashboard using the NEW CDGC AI Governance asset types (AIGovernance.UseCase/Risk/Mitigation, AIModel, AIAgent, MCPServer) — not the legacy Project type."
     }
   ]
 }

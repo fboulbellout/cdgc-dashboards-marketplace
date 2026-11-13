@@ -78,3 +78,7 @@ Each dashboard has a **screenshot preview** (real render from the CDGC UI) linke
 ## Privacy
 
 All dashboards are **sanitized** before publishing: emails, phone numbers, IPs, known person names and org/pod deep-links are masked; org id, pod host and internal asset ids are stripped. Deploying mints fresh ids and sets you as owner.
+
+## Reference: new AI Governance asset types
+
+[`AI Governance (new AI-Gov asset types)`](dashboards/ai-governance/ai-governance-new-asset-types.json) is built entirely on the **new CDGC AI Governance asset types** (`AIGovernance.UseCase`, `Risk`, `Mitigation`, `AIModel`/`AISystem`, `AgentIntegration.AIAgent`, `Mcp.MCPServer`) — **not** the legacy `governance.Project`. Use it as the template for AI-governance dashboards on the Oct-2026 release.
