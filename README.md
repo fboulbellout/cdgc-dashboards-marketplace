@@ -2,8 +2,8 @@
 
 A catalog of ready-to-deploy **Informatica CDGC dashboards** — browse by use case, industry, source system or requirement, then import into your own CDGC org. Built for humans to *shop* and for AI agents to *learn from and propose* dashboards.
 
-> 🔎 **Also here:** a classified catalog of **180 reusable CDGC saved searches** — tagged by use case, scope, asset type and source system — in [`SAVED_SEARCHES.md`](SAVED_SEARCHES.md) / [`saved-searches/`](saved-searches/) (machine index under `saved_searches` in [`catalog.json`](catalog.json)). A dashboard Search widget can point at any of them.
 
+> 🔎 **Also here:** a classified catalog of **180 reusable CDGC saved searches** — tagged by use case, scope, asset type and source system — in [`SAVED_SEARCHES.md`](SAVED_SEARCHES.md) / [`saved-searches/`](saved-searches/) (machine index under `saved_searches` in [`catalog.json`](catalog.json)). A dashboard Search widget can point at any of them.
 > **✅ Tested CDGC release:** `IDMC-202610-10M` — the dashboard export/import format is release-specific. Every dashboard here has been deployed and verified on this release (see each file's `tested_releases` and [`releases.json`](releases.json)). Importing into a **different** release may need adjustment — the import tool warns you when the target pod's release isn't in a dashboard's tested list. New releases are re-tested before being added.
 
 ## How to use
@@ -16,13 +16,14 @@ Each dashboard has a **screenshot preview** (real render from the CDGC UI) linke
 
 ![Data Governance Dashboard preview](dashboards/data-governance-home/data-governance-dashboard.png)
 
-## Catalog (18 dashboards)
+## Catalog (19 dashboards)
 
 ### 🤖 AI Governance
 
 | Dashboard | 🖼 | Widgets | Source systems | Requirements | Notes |
 |---|---|---|---|---|---|
 | [AI Governance](dashboards/ai-governance/ai-governance.json) | [preview](dashboards/ai-governance/ai-governance.png) | 24 | Databricks, Flat files, RDBMS | AI inventory, model risk, AI oversight |  |
+| [AI Governance - Oct 26](dashboards/ai-governance/ai-governance-oct-26.json) | — | 16 · 5 saved-search | Databricks, RDBMS | new Oct-26 AI Governance asset types, AI use cases / risks / mitigations, response questionnaires, AI systems & models | Oct-26 release — uses only the new AI Governance asset types; 5 reusable saved searches + custom-attribute defs |
 | [AI Inventories](dashboards/ai-governance/ai-inventories.json) | [preview](dashboards/ai-governance/ai-inventories.png) | 14 · 2 saved-search | — | AI system inventory, EU AI Act |  |
 | [AI Governance - Risk View](dashboards/ai-governance/ai-governance-risk-view.json) | [preview](dashboards/ai-governance/ai-governance-risk-view.png) | 11 · 2 saved-search | — | AI risk classification, high-risk models | uses reusable saved searches |
 | [AI Compliance - AICO Dashboard v2](dashboards/ai-governance/ai-compliance-aico-dashboard-v2.json) | [preview](dashboards/ai-governance/ai-compliance-aico-dashboard-v2.png) | 11 · 1 saved-search | — | AI compliance, regulatory |  |

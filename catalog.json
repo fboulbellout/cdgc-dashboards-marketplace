@@ -3,7 +3,7 @@
   "tested_releases": [
     "IDMC-202610-10M"
   ],
-  "count": 18,
+  "count": 19,
   "schema": "cdgc-dashboard-export/v1",
   "dashboards": [
     {
@@ -33,6 +33,34 @@
       "saved_searches": 0,
       "description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
       "note": null
+    },
+    {
+      "name": "AI Governance - Oct 26",
+      "path": "dashboards/ai-governance/ai-governance-oct-26.json",
+      "preview": null,
+      "use_case": "ai-governance",
+      "industry": [
+        "Cross-industry"
+      ],
+      "source_systems": [
+        "Databricks",
+        "RDBMS"
+      ],
+      "requirements": [
+        "new Oct-26 AI Governance asset types",
+        "AI use cases / risks / mitigations",
+        "response questionnaires",
+        "AI systems & models"
+      ],
+      "locale": "en",
+      "cdgc_release": "IDMC-202610-10M",
+      "tested_releases": [
+        "IDMC-202610-10M"
+      ],
+      "widgets": 16,
+      "saved_searches": 5,
+      "description": "",
+      "note": "Oct-26 release — uses only the new AI Governance asset types; 5 reusable saved searches + custom-attribute defs"
     },
     {
       "name": "AI Inventories",
