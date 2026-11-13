@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "RD Finance data sets",
+  "description": "RD Finance",
+  "origin": "cdgc-app",
+  "query": "data sets related to systems related to business area \"Finance and administration\"\n",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

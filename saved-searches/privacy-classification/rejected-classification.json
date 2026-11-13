@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Rejected Classification",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "data elements related with curation status in ('REJECTED') to data element classification",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

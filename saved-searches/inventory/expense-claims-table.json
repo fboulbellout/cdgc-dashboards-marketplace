@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Expense Claims Table",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "expense claims",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.odin.models.relational.Table\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Table\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Table"
+    ],
+    "scope": [
+      "Table"
+    ],
+    "search_method": "default"
+  }
+}

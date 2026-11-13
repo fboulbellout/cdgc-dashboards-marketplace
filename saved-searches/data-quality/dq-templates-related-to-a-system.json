@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "DQ Templates related to a system.",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "DQ Template related to (DQ Rule related to (columns related to (Data Set related to system Snowflake)))",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [
+      "Column",
+      "DQ Rule"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

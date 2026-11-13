@@ -1,0 +1,20 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "tables in resource \"human resources\"",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "tables in resource \"human resources\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Catalog Source",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Confidential tagged data elements",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Data Elements related to Data Sets related to Policy \"Confidential Data\"",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Query\"]}},\"options\":[\"Query\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Policy"
+    ],
+    "scope": [],
+    "search_method": "Query"
+  }
+}

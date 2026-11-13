@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "DQ rule occurrence related to (technical asset related to business term 'Email Address')",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "DQ rule occurrence related to (technical asset related to business term 'Email Address')",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": "{\"core.name\":\"ascending\"}",
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term",
+      "DQ Rule"
+    ],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

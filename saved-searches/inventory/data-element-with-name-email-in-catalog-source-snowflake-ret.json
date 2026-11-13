@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "data element with name email in catalog source snowflake_retail_dwh",
+  "description": "demo",
+  "origin": "cdgc-app",
+  "query": "data element with name email in catalog source snowflake_retail_dwh ",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [
+      "Catalog Source"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

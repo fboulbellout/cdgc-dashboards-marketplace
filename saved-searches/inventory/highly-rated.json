@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Highly Rated",
+  "description": "Highly Rated Assets",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.supplement.averageRating\",\"value\":{\"must\":{\"terms\":[],\"range\":{\"gte\":\"4\"},\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"4\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "4"
+    ],
+    "search_method": "Dynamic"
+  }
+}

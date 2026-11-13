@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Human Resources Catalog Sources",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "human resources",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"core.Resource\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Catalog Source\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Catalog Source"
+    ],
+    "scope": [
+      "Catalog Source"
+    ],
+    "search_method": "default"
+  }
+}

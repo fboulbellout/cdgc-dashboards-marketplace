@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Snowflake dataset not updated within last 30 days",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "technical dataset with catalog source name 'snowflake_retail_dwh' and not 'Data Freshness' within last 30 day",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [
+      "Catalog Source",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

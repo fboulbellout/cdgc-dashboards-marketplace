@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "SQLSERVER_TABLE",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "DimCustomer",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.odin.models.relational.Table\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Table\"]}",
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Microsoft SQL Server\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Microsoft SQL Server\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Table"
+    ],
+    "scope": [
+      "Microsoft SQL Server",
+      "Table"
+    ],
+    "search_method": "Dynamic"
+  }
+}

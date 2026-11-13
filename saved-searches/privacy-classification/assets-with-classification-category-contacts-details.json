@@ -1,0 +1,24 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Assets with classification category 'Contacts Details'",
+  "description": "all related to data element classification with classification category 'Contacts Details'",
+  "origin": "cdgc-app",
+  "query": "all related to data element classification with classification category 'Contacts Details'",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.ccgf.models.governance.BusinessTerm\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Business Term\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification"
+    ],
+    "scope": [
+      "Business Term"
+    ],
+    "search_method": "Dynamic"
+  }
+}

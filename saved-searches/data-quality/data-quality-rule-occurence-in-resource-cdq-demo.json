@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Data Quality Rule Occurence in resource CDQ_DEMO",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Data Quality Rule Occurence in resource CDQ_DEMO",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "Catalog Source",
+      "DQ Rule"
+    ],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

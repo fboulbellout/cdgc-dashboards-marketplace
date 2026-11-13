@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "all related to policy \"Privacy of Personal Data Policy\" - PII - GDPR",
+  "description": "could be usd to retrieve all asset related to PII policy",
+  "origin": "cdgc-app",
+  "query": "all related to policy \"Privacy of Personal Data Policy\"",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Policy"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

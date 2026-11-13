@@ -1,0 +1,17 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "pipeline_load_enriched_internetofsales",
+  "description": "azure data factory lineage",
+  "origin": "cdgc-app",
+  "query": "pipeline_load_enriched_internetofsales",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [],
+    "search_method": "default"
+  }
+}

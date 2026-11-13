@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "show me technical assets which are linked to data element classification",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "show me technical assets which are linked to data element classification",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification"
+    ],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

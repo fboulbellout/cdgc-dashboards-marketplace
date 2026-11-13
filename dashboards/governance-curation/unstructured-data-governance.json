@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "Unstructured Data Governance",
     "core.description": "",
@@ -8,6 +10,17 @@
   },
   "widgets": [
     {
+      "idx": 0,
+      "order": 0,
+      "widgetType": "NoticeBoardWidget",
+      "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
+      "attributes": {
+        "core.name": "Overview",
+        "com.infa.application.dashboard.noticeBoardContent": "Tracks classification and stewardship of unstructured documents across our cloud stores. Use this dashboard to monitor document types, find files without assigned stakeholders, and surface PDFs that contain PII—including identity applications, tax returns, insurance policies, and service contracts."
+      }
+    },
+    {
+      "idx": 1,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -28,20 +41,7 @@
       }
     },
     {
-      "order": 0,
-      "widgetType": "ClaireActivityWidget",
-      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
-      "attributes": {
-        "core.name": "Recommendations",
-        "core.description": "Data Classification and Glossary recommendations ",
-        "com.infa.application.dashboard.recommendationTypes": [
-          "CLASSIFICATION",
-          "GLOSSARY_TERM_ASSOCIATION",
-          "GENERATED_CLASSIFICATION"
-        ]
-      }
-    },
-    {
+      "idx": 2,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -63,6 +63,22 @@
       }
     },
     {
+      "idx": 3,
+      "order": 0,
+      "widgetType": "ClaireActivityWidget",
+      "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
+      "attributes": {
+        "core.name": "Recommendations",
+        "core.description": "Data Classification and Glossary recommendations ",
+        "com.infa.application.dashboard.recommendationTypes": [
+          "CLASSIFICATION",
+          "GLOSSARY_TERM_ASSOCIATION",
+          "GENERATED_CLASSIFICATION"
+        ]
+      }
+    },
+    {
+      "idx": 4,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -82,6 +98,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -102,15 +119,7 @@
       }
     },
     {
-      "order": 0,
-      "widgetType": "NoticeBoardWidget",
-      "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
-      "attributes": {
-        "core.name": "Overview",
-        "com.infa.application.dashboard.noticeBoardContent": "Tracks classification and stewardship of unstructured documents across our cloud stores. Use this dashboard to monitor document types, find files without assigned stakeholders, and surface PDFs that contain PII—including identity applications, tax returns, insurance policies, and service contracts."
-      }
-    },
-    {
+      "idx": 6,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -131,6 +140,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -157,6 +167,7 @@
       "w": 3,
       "x": 6,
       "y": 0,
+      "idx": 2,
       "order": 0
     },
     {
@@ -164,6 +175,7 @@
       "w": 3,
       "x": 3,
       "y": 0,
+      "idx": 1,
       "order": 0
     },
     {
@@ -171,6 +183,7 @@
       "w": 3,
       "x": 0,
       "y": 0,
+      "idx": 0,
       "order": 0
     },
     {
@@ -178,6 +191,7 @@
       "w": 3,
       "x": 9,
       "y": 0,
+      "idx": 3,
       "order": 0
     },
     {
@@ -185,6 +199,7 @@
       "w": 12,
       "x": 0,
       "y": 6,
+      "idx": 5,
       "order": 0
     },
     {
@@ -192,6 +207,7 @@
       "w": 3,
       "x": 0,
       "y": 10,
+      "idx": 4,
       "order": 0
     },
     {
@@ -199,6 +215,7 @@
       "w": 3,
       "x": 3,
       "y": 10,
+      "idx": 6,
       "order": 2
     },
     {
@@ -206,6 +223,7 @@
       "w": 6,
       "x": 6,
       "y": 10,
+      "idx": 7,
       "order": 3
     }
   ],
@@ -263,7 +281,6 @@
     }
   },
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

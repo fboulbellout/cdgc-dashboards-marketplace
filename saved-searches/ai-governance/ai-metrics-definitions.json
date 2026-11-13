@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "AI Metrics definitions",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "metrics related to subdomain related to domain \"AI Model Performance Metrics\"",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "AI Model",
+      "Domain",
+      "Metric"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

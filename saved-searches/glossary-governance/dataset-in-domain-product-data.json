@@ -1,0 +1,20 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Dataset in domain Product Data",
+  "description": "find all tech assets related to business data domain \"Product Data\"",
+  "origin": "cdgc-app",
+  "query": "Technical dataset related to all in domain \"Product Data\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Domain",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

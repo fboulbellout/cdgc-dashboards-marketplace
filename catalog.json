@@ -3,7 +3,7 @@
   "tested_releases": [
     "IDMC-202610-10M"
   ],
-  "count": 19,
+  "count": 18,
   "schema": "cdgc-dashboard-export/v1",
   "dashboards": [
     {
@@ -487,36 +487,2628 @@
       "saved_searches": 0,
       "description": "",
       "note": null
+    }
+  ],
+  "saved_searches": [
+    {
+      "name": "dq occurences result",
+      "slug": "dq-occurences-result",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "3afd50T5yU2gjVLnIkXZe2",
+        "Consistency",
+        "Data Quality Rule Occurrence",
+        "Validity"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "list dq occurrence result",
+      "path": "saved-searches/data-quality/dq-occurences-result.json"
     },
     {
-      "name": "AI Governance (new AI-Gov asset types)",
-      "path": "dashboards/ai-governance/ai-governance-new-asset-types.json",
-      "preview": null,
-      "use_case": "ai-governance",
-      "industry": [
-        "Cross-industry"
+      "name": "Anonymised DataSets",
+      "slug": "anonymised-datasets",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "Policy",
+        "Table"
       ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "list of dataset related to anonymised policy",
+      "path": "saved-searches/glossary-governance/anonymised-datasets.json"
+    },
+    {
+      "name": "Element with declined BG Term curation",
+      "slug": "element-with-declined-bg-term-curation",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "Element with declined BG Term curation",
+      "path": "saved-searches/glossary-governance/element-with-declined-bg-term-curation.json"
+    },
+    {
+      "name": "Search With AND",
+      "slug": "search-with-and",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "help to illustrate search with AND",
+      "path": "saved-searches/privacy-classification/search-with-and.json"
+    },
+    {
+      "name": "data element in catalog source snowflake_retail_dwh",
+      "slug": "data-element-in-catalog-source-snowflake-retail-dwh",
+      "use_case": "inventory",
       "source_systems": [
-        "Databricks",
-        "AWS SageMaker",
-        "MCP",
-        "Salesforce Agentforce"
+        "Snowflake"
       ],
-      "requirements": [
-        "EU AI Act",
-        "AI use-case tiering",
-        "AI risk & mitigation",
-        "AI agents & MCP inventory"
+      "asset_types": [
+        "Catalog Source"
       ],
-      "locale": "en",
-      "cdgc_release": "IDMC-202610-10M",
-      "tested_releases": [
-        "IDMC-202610-10M"
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/data-element-in-catalog-source-snowflake-retail-dwh.json"
+    },
+    {
+      "name": "data element in \"Delta Lake AdventureWorks\"",
+      "slug": "data-element-in-delta-lake-adventureworks",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source"
       ],
-      "widgets": 16,
-      "saved_searches": 5,
-      "description": "Reference AI Governance dashboard built entirely on the new CDGC AI Governance asset types (Use Case, Risk, Mitigation, AI Model/System, AI Agent, MCP Server).",
-      "note": "Reference dashboard using the NEW CDGC AI Governance asset types (AIGovernance.UseCase/Risk/Mitigation, AIModel, AIAgent, MCPServer) — not the legacy Project type."
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "data element in catalog source \"Delta Lake AdventureWorks\"",
+      "path": "saved-searches/inventory/data-element-in-delta-lake-adventureworks.json"
+    },
+    {
+      "name": "tables related to column Email",
+      "slug": "tables-related-to-column-email",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Column",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "Email Columns",
+      "path": "saved-searches/inventory/tables-related-to-column-email.json"
+    },
+    {
+      "name": "data element with name email in catalog source snowflake_retail_dwh",
+      "slug": "data-element-with-name-email-in-catalog-source-snowflake-ret",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Catalog Source"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "demo",
+      "path": "saved-searches/inventory/data-element-with-name-email-in-catalog-source-snowflake-ret.json"
+    },
+    {
+      "name": "Element with declined BG Term curation demo",
+      "slug": "element-with-declined-bg-term-curation-demo",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [
+        "Column"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "Element with declined BG Term curation",
+      "path": "saved-searches/glossary-governance/element-with-declined-bg-term-curation-demo.json"
+    },
+    {
+      "name": "all related to policy 'Personally Identifiable Information (PII) Data Terms of Use'",
+      "slug": "all-related-to-policy-personally-identifiable-information-pi",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Policy"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/privacy-classification/all-related-to-policy-personally-identifiable-information-pi.json"
+    },
+    {
+      "name": "policy related to policy  \"AI/ML Regulations\"",
+      "slug": "policy-related-to-policy-ai-ml-regulations",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Policy"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "AI Regulations",
+      "path": "saved-searches/glossary-governance/policy-related-to-policy-ai-ml-regulations.json"
+    },
+    {
+      "name": "View Online & Store Orders",
+      "slug": "view-online-store-orders",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/view-online-store-orders.json"
+    },
+    {
+      "name": "see observaibility on V_TEMP_FACTSTORESALES_DETAILED_EUROPE",
+      "slug": "see-observaibility-on-v-temp-factstoresales-detailed-europe",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/see-observaibility-on-v-temp-factstoresales-detailed-europe.json"
+    },
+    {
+      "name": "Asset classificati sensibili",
+      "slug": "asset-classificati-sensibili",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/privacy-classification/asset-classificati-sensibili.json"
+    },
+    {
+      "name": "Data Set senza stakeholder",
+      "slug": "data-set-senza-stakeholder",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/glossary-governance/data-set-senza-stakeholder.json"
+    },
+    {
+      "name": "Human Resources Catalog Sources",
+      "slug": "human-resources-catalog-sources",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source"
+      ],
+      "scope": [
+        "Catalog Source"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/human-resources-catalog-sources.json"
+    },
+    {
+      "name": "Expense Claims Table",
+      "slug": "expense-claims-table",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "Table"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/expense-claims-table.json"
+    },
+    {
+      "name": "DIM_Customer",
+      "slug": "dim-customer",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Snowflake",
+        "Table"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "Search for a table with good lineage, DQ, and observability",
+      "path": "saved-searches/inventory/dim-customer.json"
+    },
+    {
+      "name": "tables in resource \"human resources\"",
+      "slug": "tables-in-resource-human-resources",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/tables-in-resource-human-resources.json"
+    },
+    {
+      "name": "CDE with low DQ",
+      "slug": "cde-with-low-dq",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "DQ Rule",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/data-quality/cde-with-low-dq.json"
+    },
+    {
+      "name": "business term",
+      "slug": "business-term",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/glossary-governance/business-term.json"
+    },
+    {
+      "name": "Table Expense_Claims",
+      "slug": "table-expense-claims",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/table-expense-claims.json"
+    },
+    {
+      "name": "sales order details",
+      "slug": "sales-order-details",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/sales-order-details.json"
+    },
+    {
+      "name": "find PII related assets",
+      "slug": "find-pii-related-assets",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "Find all business & technical assets related to PII entity",
+      "path": "saved-searches/privacy-classification/find-pii-related-assets.json"
+    },
+    {
+      "name": "order data Datset - Snowflake",
+      "slug": "order-data-datset-snowflake",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Data Set"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "order data search",
+      "path": "saved-searches/inventory/order-data-datset-snowflake.json"
+    },
+    {
+      "name": "AI models with 'Risk Category' 'Unknown'",
+      "slug": "ai-models-with-risk-category-unknown",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "search for all AI Models not compliants with EU AI Act",
+      "path": "saved-searches/ai-governance/ai-models-with-risk-category-unknown.json"
+    },
+    {
+      "name": "all in domain \"Product Data\"",
+      "slug": "all-in-domain-product-data",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Domain"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "find all product data business assets",
+      "path": "saved-searches/glossary-governance/all-in-domain-product-data.json"
+    },
+    {
+      "name": "Technical asset  related to all in domain \"Product Data\"",
+      "slug": "technical-asset-related-to-all-in-domain-product-data",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Domain"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "find all tech assets related to business data domain \"Product Data\"",
+      "path": "saved-searches/glossary-governance/technical-asset-related-to-all-in-domain-product-data.json"
+    },
+    {
+      "name": "Dataset in domain Product Data",
+      "slug": "dataset-in-domain-product-data",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Domain",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "find all tech assets related to business data domain \"Product Data\"",
+      "path": "saved-searches/glossary-governance/dataset-in-domain-product-data.json"
+    },
+    {
+      "name": "Human Resources Tables",
+      "slug": "human-resources-tables",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/human-resources-tables.json"
+    },
+    {
+      "name": "orders data - filter on only table data",
+      "slug": "orders-data-filter-on-only-table-data",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/orders-data-filter-on-only-table-data.json"
+    },
+    {
+      "name": "Auto-Field8-Completeness-Email Address - Completeness",
+      "slug": "auto-field8-completeness-email-address-completeness",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "rule for completeness which uses a mapplet in its definition",
+      "path": "saved-searches/inventory/auto-field8-completeness-email-address-completeness.json"
+    },
+    {
+      "name": "contoso",
+      "slug": "contoso",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "delta lake databricks",
+      "path": "saved-searches/inventory/contoso.json"
+    },
+    {
+      "name": "match_percentage",
+      "slug": "match-percentage",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "columns in linege with claire reccommendatio",
+      "path": "saved-searches/inventory/match-percentage.json"
+    },
+    {
+      "name": "op1145580",
+      "slug": "op1145580",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "delta lake schema with lineage",
+      "path": "saved-searches/inventory/op1145580.json"
+    },
+    {
+      "name": "pipeline_load_enriched_internetofsales",
+      "slug": "pipeline-load-enriched-internetofsales",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "azure data factory lineage",
+      "path": "saved-searches/inventory/pipeline-load-enriched-internetofsales.json"
+    },
+    {
+      "name": "CDE With Low Data Quality Score",
+      "slug": "cde-with-low-data-quality-score",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "DQ Rule",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "Observability Search",
+      "path": "saved-searches/data-quality/cde-with-low-data-quality-score.json"
+    },
+    {
+      "name": "Available Data Products",
+      "slug": "available-data-products",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Data Marketplace"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/available-data-products.json"
+    },
+    {
+      "name": "data element related to business terms which are cde",
+      "slug": "data-element-related-to-business-terms-which-are-cde",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "Critical Data Elements",
+      "path": "saved-searches/glossary-governance/data-element-related-to-business-terms-which-are-cde.json"
+    },
+    {
+      "name": "YOY Growth Revenue Report",
+      "slug": "yoy-growth-revenue-report",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/yoy-growth-revenue-report.json"
+    },
+    {
+      "name": "table product_data",
+      "slug": "table-product-data",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "data product",
+      "path": "saved-searches/inventory/table-product-data.json"
+    },
+    {
+      "name": "Sales Transactions",
+      "slug": "sales-transactions",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "Find everything related to sales transactions",
+      "path": "saved-searches/inventory/sales-transactions.json"
+    },
+    {
+      "name": "Claims Catalog Sources",
+      "slug": "claims-catalog-sources",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/claims-catalog-sources.json"
+    },
+    {
+      "name": "domain 'Party Data'",
+      "slug": "domain-party-data",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Domain"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/glossary-governance/domain-party-data.json"
+    },
+    {
+      "name": "snowflake mappings",
+      "slug": "snowflake-mappings",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Mapping"
+      ],
+      "search_method": "default",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/snowflake-mappings.json"
+    },
+    {
+      "name": "Snowflake technical datasets",
+      "slug": "snowflake-technical-datasets",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/snowflake-technical-datasets.json"
+    },
+    {
+      "name": "High Risk AI Models Not Classified as High Risk",
+      "slug": "high-risk-ai-models-not-classified-as-high-risk",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model",
+        "Business Term",
+        "Policy",
+        "Risk",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/ai-governance/high-risk-ai-models-not-classified-as-high-risk.json"
+    },
+    {
+      "name": "Snowflake dataset not updated within last 30 days",
+      "slug": "snowflake-dataset-not-updated-within-last-30-days",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/inventory/snowflake-dataset-not-updated-within-last-30-days.json"
+    },
+    {
+      "name": "AI Use Cases",
+      "slug": "ai-use-cases",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Use Case"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/ai-use-cases.json"
+    },
+    {
+      "name": "DQ Templates related to a system.",
+      "slug": "dq-templates-related-to-a-system",
+      "use_case": "data-quality",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Column",
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-templates-related-to-a-system.json"
+    },
+    {
+      "name": "DQ Templates related to all columns in a source",
+      "slug": "dq-templates-related-to-all-columns-in-a-source",
+      "use_case": "data-quality",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Column",
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "default",
+      "has_filters": false,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-templates-related-to-all-columns-in-a-source.json"
+    },
+    {
+      "name": "Sales / Order Details",
+      "slug": "sales-order-details",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "To demo MAC",
+      "path": "saved-searches/inventory/sales-order-details.json"
+    },
+    {
+      "name": "product information",
+      "slug": "product-information",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "MAC demo search for relationshIps --> DOMAIN",
+      "path": "saved-searches/inventory/product-information.json"
+    },
+    {
+      "name": "Product data",
+      "slug": "product-data",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Table"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "Product data table to show MAC and Lineage view",
+      "path": "saved-searches/inventory/product-data.json"
+    },
+    {
+      "name": "_columns related to data classification 'Postal Code'",
+      "slug": "columns-related-to-data-classification-postal-code",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification",
+        "Column"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/columns-related-to-data-classification-postal-code.json"
+    },
+    {
+      "name": "all assets updated within last 60 day",
+      "slug": "all-assets-updated-within-last-60-day",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/all-assets-updated-within-last-60-day.json"
+    },
+    {
+      "name": "COH-STRUC - identifie inconsistance métadata et data",
+      "slug": "coh-struc-identifie-inconsistance-m-tadata-et-data",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification",
+        "Column",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/coh-struc-identifie-inconsistance-m-tadata-et-data.json"
+    },
+    {
+      "name": "Tableau 5* Reports",
+      "slug": "tableau-5-reports",
+      "use_case": "inventory",
+      "source_systems": [
+        "Tableau"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "5",
+        "Tableau"
+      ],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/tableau-5-reports.json"
+    },
+    {
+      "name": "business asset without stakeholder",
+      "slug": "business-asset-without-stakeholder",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "7a1fec19f38f8f5d74c2d3b67c6a6747",
+        "e6be8b86bdfc15ed8dc90dfa44e772f6"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/business-asset-without-stakeholder.json"
+    },
+    {
+      "name": "Table with Emails",
+      "slug": "table-with-emails",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/table-with-emails.json"
+    },
+    {
+      "name": "Assets with \"Betty\" as a stakeholder",
+      "slug": "assets-with-betty-as-a-stakeholder",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "3m8hM7lOkyqkwwJ5x6OZOp",
+        "kyrjPaTr42XciLUPNFZzIM"
+      ],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/assets-with-betty-as-a-stakeholder.json"
+    },
+    {
+      "name": "dimCustomer",
+      "slug": "dimcustomer",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Flexible",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/dimcustomer.json"
+    },
+    {
+      "name": "data element related to glossary country",
+      "slug": "data-element-related-to-glossary-country",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "data element related to glossary country",
+      "path": "saved-searches/glossary-governance/data-element-related-to-glossary-country.json"
+    },
+    {
+      "name": "data element related to data classification 'email'",
+      "slug": "data-element-related-to-data-classification-email",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "data element related to data classification 'email'",
+      "path": "saved-searches/privacy-classification/data-element-related-to-data-classification-email.json"
+    },
+    {
+      "name": "all with resource type tableau",
+      "slug": "all-with-resource-type-tableau",
+      "use_case": "inventory",
+      "source_systems": [
+        "Tableau"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/all-with-resource-type-tableau.json"
+    },
+    {
+      "name": "customer",
+      "slug": "customer",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/customer.json"
+    },
+    {
+      "name": "dq rule  related to data element related to business term which are cde",
+      "slug": "dq-rule-related-to-data-element-related-to-business-term-whi",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-rule-related-to-data-element-related-to-business-term-whi.json"
+    },
+    {
+      "name": "dq rules for completeness",
+      "slug": "dq-rules-for-completeness",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "DQ Rule"
+      ],
+      "scope": [
+        "Completeness",
+        "Data Quality Rule Occurrence"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-rules-for-completeness.json"
+    },
+    {
+      "name": "dq rules with score NOT ACCEPTABLE",
+      "slug": "dq-rules-with-score-not-acceptable",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "DQ Rule",
+        "Table"
+      ],
+      "scope": [
+        "Data Quality Rule Occurrence",
+        "Not Acceptable"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-rules-with-score-not-acceptable.json"
+    },
+    {
+      "name": "Snowflake table Customer Master",
+      "slug": "snowflake-table-customer-master",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "Snowflake",
+        "Table"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/snowflake-table-customer-master.json"
+    },
+    {
+      "name": "Highly Rated",
+      "slug": "highly-rated",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "4"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "Highly Rated Assets",
+      "path": "saved-searches/inventory/highly-rated.json"
+    },
+    {
+      "name": "my developer statements",
+      "slug": "my-developer-statements",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Snowflake"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/my-developer-statements.json"
+    },
+    {
+      "name": "Tableau Assets",
+      "slug": "tableau-assets",
+      "use_case": "inventory",
+      "source_systems": [
+        "Tableau"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "Tableau"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "Find the Tableau Assets",
+      "path": "saved-searches/inventory/tableau-assets.json"
+    },
+    {
+      "name": "data elements related with curation status in ('ACCEPTED', AUTO_ACCEPTED) to glossary",
+      "slug": "data-elements-related-with-curation-status-in-accepted-auto-",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/data-elements-related-with-curation-status-in-accepted-auto-.json"
+    },
+    {
+      "name": "AUTO_ACCEPTED glossary curation",
+      "slug": "auto-accepted-glossary-curation",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/auto-accepted-glossary-curation.json"
+    },
+    {
+      "name": "Rejected Classification",
+      "slug": "rejected-classification",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/rejected-classification.json"
+    },
+    {
+      "name": "PII Entity Classification",
+      "slug": "pii-entity-classification",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/pii-entity-classification.json"
+    },
+    {
+      "name": "Complexe Lineage Assets",
+      "slug": "complexe-lineage-assets",
+      "use_case": "lineage-impact",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/lineage-impact/complexe-lineage-assets.json"
+    },
+    {
+      "name": "Data Obs Systems",
+      "slug": "data-obs-systems",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/data-obs-systems.json"
+    },
+    {
+      "name": "data element related to data classification email",
+      "slug": "data-element-related-to-data-classification-email",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/data-element-related-to-data-classification-email.json"
+    },
+    {
+      "name": "dq rules",
+      "slug": "dq-rules",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-rules.json"
+    },
+    {
+      "name": "table Customer Master",
+      "slug": "table-customer-master",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/table-customer-master.json"
+    },
+    {
+      "name": "All assets related to Reports that were updated in the last 90 days",
+      "slug": "all-assets-related-to-reports-that-were-updated-in-the-last-",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "last90Days"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "Assets that are related to reports and have been updated so may need impact analysis",
+      "path": "saved-searches/inventory/all-assets-related-to-reports-that-were-updated-in-the-last-.json"
+    },
+    {
+      "name": "retrieve pdf files",
+      "slug": "retrieve-pdf-files",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/retrieve-pdf-files.json"
+    },
+    {
+      "name": "unstructured files",
+      "slug": "unstructured-files",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/unstructured-files.json"
+    },
+    {
+      "name": "sales detail",
+      "slug": "sales-detail",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/sales-detail.json"
+    },
+    {
+      "name": "Claire Co-Pilot - Asset description",
+      "slug": "claire-co-pilot-asset-description",
+      "use_case": "curation",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/curation/claire-co-pilot-asset-description.json"
+    },
+    {
+      "name": "All assets related to data models and updated in the last 90 days",
+      "slug": "all-assets-related-to-data-models-and-updated-in-the-last-90",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [
+        "last90Days"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/all-assets-related-to-data-models-and-updated-in-the-last-90.json"
+    },
+    {
+      "name": "PII",
+      "slug": "pii",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Data Entity Classification"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "Identify where PII data is stored within our data landscape",
+      "path": "saved-searches/privacy-classification/pii.json"
+    },
+    {
+      "name": "ORACLE LINEAGE___SALES_STORES_EMEA",
+      "slug": "oracle-lineage-sales-stores-emea",
+      "use_case": "lineage-impact",
+      "source_systems": [
+        "Oracle"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Oracle"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/lineage-impact/oracle-lineage-sales-stores-emea.json"
+    },
+    {
+      "name": "SQLSERVER_dbo",
+      "slug": "sqlserver-dbo",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Microsoft SQL Server"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/sqlserver-dbo.json"
+    },
+    {
+      "name": "SQLSERVER_TABLE",
+      "slug": "sqlserver-table",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "Microsoft SQL Server",
+        "Table"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/sqlserver-table.json"
+    },
+    {
+      "name": "Fact Internet Sales Enriched",
+      "slug": "fact-internet-sales-enriched",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "for my lineage",
+      "path": "saved-searches/inventory/fact-internet-sales-enriched.json"
+    },
+    {
+      "name": "all related to policy \"Privacy of Personal Data Policy\" - PII - GDPR",
+      "slug": "all-related-to-policy-privacy-of-personal-data-policy-pii-gd",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Policy"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "could be usd to retrieve all asset related to PII policy",
+      "path": "saved-searches/privacy-classification/all-related-to-policy-privacy-of-personal-data-policy-pii-gd.json"
+    },
+    {
+      "name": "AI regulations",
+      "slug": "ai-regulations",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/ai-regulations.json"
+    },
+    {
+      "name": "AI Metrics definitions",
+      "slug": "ai-metrics-definitions",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model",
+        "Domain",
+        "Metric"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/ai-metrics-definitions.json"
+    },
+    {
+      "name": "Oracle Retail Till Data Quality under 70%",
+      "slug": "oracle-retail-till-data-quality-under-70",
+      "use_case": "data-quality",
+      "source_systems": [
+        "Oracle"
+      ],
+      "asset_types": [
+        "DQ Rule"
+      ],
+      "scope": [
+        "efe732a3537d993380aff0b90d5b8f8b"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/oracle-retail-till-data-quality-under-70.json"
+    },
+    {
+      "name": "generated classifications not promoted",
+      "slug": "generated-classifications-not-promoted",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/generated-classifications-not-promoted.json"
+    },
+    {
+      "name": "technical dataset with catalog source name 'snowflake_retail_dwh' and not 'Data Freshness' within last 30 day",
+      "slug": "technical-dataset-with-catalog-source-name-snowflake-retail-",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/technical-dataset-with-catalog-source-name-snowflake-retail-.json"
+    },
+    {
+      "name": "Relational Tables Without Lineage",
+      "slug": "relational-tables-without-lineage",
+      "use_case": "lineage-impact",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/lineage-impact/relational-tables-without-lineage.json"
+    },
+    {
+      "name": "business terms which are critical data element",
+      "slug": "business-terms-which-are-critical-data-element",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/business-terms-which-are-critical-data-element.json"
+    },
+    {
+      "name": "Classified Data Elements",
+      "slug": "classified-data-elements",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "Data Elements that have a classification",
+      "path": "saved-searches/privacy-classification/classified-data-elements.json"
+    },
+    {
+      "name": "Technical dataset with sensitive data",
+      "slug": "technical-dataset-with-sensitive-data",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Classification",
+        "Risk",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/technical-dataset-with-sensitive-data.json"
+    },
+    {
+      "name": "policies without stakeholder",
+      "slug": "policies-without-stakeholder",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/policies-without-stakeholder.json"
+    },
+    {
+      "name": "DG Projects",
+      "slug": "dg-projects",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Project"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/dg-projects.json"
+    },
+    {
+      "name": "PRODUCT_NAME",
+      "slug": "product-name",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/product-name.json"
+    },
+    {
+      "name": "sales forecast AI models",
+      "slug": "sales-forecast-ai-models",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [
+        "Modello IA"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/sales-forecast-ai-models.json"
+    },
+    {
+      "name": "search 🚫 PROHIBITED",
+      "slug": "search-prohibited",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Regulation",
+        "🚫 PROHIBITED"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/search-prohibited.json"
+    },
+    {
+      "name": "Risk Assessment Questionnaires",
+      "slug": "risk-assessment-questionnaires",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Questionnaire",
+        "Risk"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/risk-assessment-questionnaires.json"
+    },
+    {
+      "name": "all business assets without dq occurrences",
+      "slug": "all-business-assets-without-dq-occurrences",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model",
+        "AI System",
+        "Business Term",
+        "DQ Rule",
+        "Domain",
+        "Metric",
+        "Policy",
+        "Process"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/all-business-assets-without-dq-occurrences.json"
+    },
+    {
+      "name": "Data Elements used in China business Unit",
+      "slug": "data-elements-used-in-china-business-unit",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "Data Elements related to Data Sets related to Geography \"China\"",
+      "path": "saved-searches/inventory/data-elements-used-in-china-business-unit.json"
+    },
+    {
+      "name": "Confidential tagged data elements",
+      "slug": "confidential-tagged-data-elements",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Policy"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/confidential-tagged-data-elements.json"
+    },
+    {
+      "name": "Powercenter items",
+      "slug": "powercenter-items",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Informatica PowerCenter"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/powercenter-items.json"
+    },
+    {
+      "name": "PII Classifications",
+      "slug": "pii-classifications",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/pii-classifications.json"
+    },
+    {
+      "name": "PII classifications",
+      "slug": "pii-classifications",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Flexible",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/pii-classifications.json"
+    },
+    {
+      "name": "PII without Stakeholders",
+      "slug": "pii-without-stakeholders",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Flexible",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/pii-without-stakeholders.json"
+    },
+    {
+      "name": "promoted generated classifications",
+      "slug": "promoted-generated-classifications",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/promoted-generated-classifications.json"
+    },
+    {
+      "name": "All related to PII",
+      "slug": "all-related-to-pii",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/all-related-to-pii.json"
+    },
+    {
+      "name": "oracle tables with PII",
+      "slug": "oracle-tables-with-pii",
+      "use_case": "privacy-classification",
+      "source_systems": [
+        "Oracle"
+      ],
+      "asset_types": [
+        "Classification",
+        "Table"
+      ],
+      "scope": [
+        "Oracle"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/oracle-tables-with-pii.json"
+    },
+    {
+      "name": "Dataset Effected by General Data Protection Regulation (GDPR)",
+      "slug": "dataset-effected-by-general-data-protection-regulation-gdpr",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "EU Data Act Example",
+      "path": "saved-searches/privacy-classification/dataset-effected-by-general-data-protection-regulation-gdpr.json"
+    },
+    {
+      "name": "YOY Growth Revenue",
+      "slug": "yoy-growth-revenue",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/yoy-growth-revenue.json"
+    },
+    {
+      "name": "Order Details",
+      "slug": "order-details",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/order-details.json"
+    },
+    {
+      "name": "Business terms CDE",
+      "slug": "business-terms-cde",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/business-terms-cde.json"
+    },
+    {
+      "name": "Store Orders",
+      "slug": "store-orders",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "View"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/store-orders.json"
+    },
+    {
+      "name": "Customer Success Responsibility List",
+      "slug": "customer-success-responsibility-list",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "kl9FPetFNOphReoJkHj0SE"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/customer-success-responsibility-list.json"
+    },
+    {
+      "name": "Customer Master_with_preview_failed_rows",
+      "slug": "customer-master-with-preview-failed-rows",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Added To",
+        "Column",
+        "Snowflake",
+        "Table"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/customer-master-with-preview-failed-rows.json"
+    },
+    {
+      "name": "data elements related to classification",
+      "slug": "data-elements-related-to-classification",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/data-elements-related-to-classification.json"
+    },
+    {
+      "name": "CDE DQ owned by Data Scientists Group",
+      "slug": "cde-dq-owned-by-data-scientists-group",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "DQ Rule",
+        "Table"
+      ],
+      "scope": [
+        "jkATDF8IYMGfN1LTflGMAd"
+      ],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/cde-dq-owned-by-data-scientists-group.json"
+    },
+    {
+      "name": "Country DQ rules with over 10K failed rows",
+      "slug": "country-dq-rules-with-over-10k-failed-rows",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "DQ Rule"
+      ],
+      "scope": [
+        "Data Quality Rule Occurrence",
+        "greater than"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/country-dq-rules-with-over-10k-failed-rows.json"
+    },
+    {
+      "name": "assets not related to asset groups",
+      "slug": "assets-not-related-to-asset-groups",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/assets-not-related-to-asset-groups.json"
+    },
+    {
+      "name": "Assets with classification category 'Contacts Details'",
+      "slug": "assets-with-classification-category-contacts-details",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [
+        "Business Term"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "all related to data element classification with classification category 'Contacts Details'",
+      "path": "saved-searches/privacy-classification/assets-with-classification-category-contacts-details.json"
+    },
+    {
+      "name": "show me glossary link to policy",
+      "slug": "show-me-glossary-link-to-policy",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "Policy"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/show-me-glossary-link-to-policy.json"
+    },
+    {
+      "name": "show me table without description",
+      "slug": "show-me-table-without-description",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/show-me-table-without-description.json"
+    },
+    {
+      "name": "business assets without stakeholders",
+      "slug": "business-assets-without-stakeholders",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/business-assets-without-stakeholders.json"
+    },
+    {
+      "name": "show me technical assets which are linked to data element classification",
+      "slug": "show-me-technical-assets-which-are-linked-to-data-element-cl",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/show-me-technical-assets-which-are-linked-to-data-element-cl.json"
+    },
+    {
+      "name": "Glossary (CDEs)",
+      "slug": "glossary-cdes",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/glossary-cdes.json"
+    },
+    {
+      "name": "CDE Glossary Without Stakeholders",
+      "slug": "cde-glossary-without-stakeholders",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/cde-glossary-without-stakeholders.json"
+    },
+    {
+      "name": "tables or views in snowflake_retail_dwh",
+      "slug": "tables-or-views-in-snowflake-retail-dwh",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/tables-or-views-in-snowflake-retail-dwh.json"
+    },
+    {
+      "name": "Tables and views in \nsnowflake_retail_dwh",
+      "slug": "tables-and-views-in-snowflake-retail-dwh",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/tables-and-views-in-snowflake-retail-dwh.json"
+    },
+    {
+      "name": "(table, view) in Catalog Source 'snowflake_retail_dwh'",
+      "slug": "table-view-in-catalog-source-snowflake-retail-dwh",
+      "use_case": "inventory",
+      "source_systems": [
+        "Snowflake"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Query",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/table-view-in-catalog-source-snowflake-retail-dwh.json"
+    },
+    {
+      "name": "RD Finance data sets",
+      "slug": "rd-finance-data-sets",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "RD Finance",
+      "path": "saved-searches/inventory/rd-finance-data-sets.json"
+    },
+    {
+      "name": "data quality rule occurences with stakeholder AI DQ Steward",
+      "slug": "data-quality-rule-occurences-with-stakeholder-ai-dq-steward",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "DQ Rule"
+      ],
+      "scope": [
+        "6h7bs2sOqauk9WKdq7AjWD"
+      ],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/data-quality-rule-occurences-with-stakeholder-ai-dq-steward.json"
+    },
+    {
+      "name": "what business glossaries relate to GDPR Policy",
+      "slug": "what-business-glossaries-relate-to-gdpr-policy",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Policy"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/what-business-glossaries-relate-to-gdpr-policy.json"
+    },
+    {
+      "name": "tabelle collegate a customer",
+      "slug": "tabelle-collegate-a-customer",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/tabelle-collegate-a-customer.json"
+    },
+    {
+      "name": "any ai model for sales forecast ?",
+      "slug": "any-ai-model-for-sales-forecast",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/any-ai-model-for-sales-forecast.json"
+    },
+    {
+      "name": "PII data element",
+      "slug": "pii-data-element",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/pii-data-element.json"
+    },
+    {
+      "name": "technical dataset related to data entity classifications \"PII\"",
+      "slug": "technical-dataset-related-to-data-entity-classifications-pii",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/technical-dataset-related-to-data-entity-classifications-pii.json"
+    },
+    {
+      "name": "show me growth metrics",
+      "slug": "show-me-growth-metrics",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Metric"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/show-me-growth-metrics.json"
+    },
+    {
+      "name": "PDF Files related to Data Entity classification PII",
+      "slug": "pdf-files-related-to-data-entity-classification-pii",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/pdf-files-related-to-data-entity-classification-pii.json"
+    },
+    {
+      "name": "Document Classifications",
+      "slug": "document-classifications",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [
+        "Document Classification"
+      ],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/document-classifications.json"
+    },
+    {
+      "name": "PDF Files without stakeholders",
+      "slug": "pdf-files-without-stakeholders",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/pdf-files-without-stakeholders.json"
+    },
+    {
+      "name": "unstructured files related to Data Entity classification PII",
+      "slug": "unstructured-files-related-to-data-entity-classification-pii",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/unstructured-files-related-to-data-entity-classification-pii.json"
+    },
+    {
+      "name": "unstructured file Modified within last 365",
+      "slug": "unstructured-file-modified-within-last-365",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/unstructured-file-modified-within-last-365.json"
+    },
+    {
+      "name": "unstructured files without stakeholders",
+      "slug": "unstructured-files-without-stakeholders",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/unstructured-files-without-stakeholders.json"
+    },
+    {
+      "name": "unstructured files classified as Document classification \"Aadhaar Application\"",
+      "slug": "unstructured-files-classified-as-document-classification-aad",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/unstructured-files-classified-as-document-classification-aad.json"
+    },
+    {
+      "name": "unstructured files classified as Document classification \"US Individual Income tax returns\"  and without stakeholders",
+      "slug": "unstructured-files-classified-as-document-classification-us-",
+      "use_case": "privacy-classification",
+      "source_systems": [],
+      "asset_types": [
+        "Classification"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/privacy-classification/unstructured-files-classified-as-document-classification-us-.json"
+    },
+    {
+      "name": "unstructured file with Modified On within last 90 days",
+      "slug": "unstructured-file-with-modified-on-within-last-90-days",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/unstructured-file-with-modified-on-within-last-90-days.json"
+    },
+    {
+      "name": "Sony demo - Notebook",
+      "slug": "sony-demo-notebook",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Notebook Instance"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "Calculation , Lineage",
+      "path": "saved-searches/inventory/sony-demo-notebook.json"
+    },
+    {
+      "name": "Sony demo - enriched sales forecast",
+      "slug": "sony-demo-enriched-sales-forecast",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Table"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "Classification, Lineage, Relationship, Overlays",
+      "path": "saved-searches/inventory/sony-demo-enriched-sales-forecast.json"
+    },
+    {
+      "name": "AIGOV_MI_ sales_forecast_model - Version 34",
+      "slug": "aigov-mi-sales-forecast-model-version-34",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/aigov-mi-sales-forecast-model-version-34.json"
+    },
+    {
+      "name": "PAT_employee details",
+      "slug": "pat-employee-details",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [
+        "Added To",
+        "Microsoft SQL Server"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/pat-employee-details.json"
+    },
+    {
+      "name": "PAT_Employee_TABLEAU_Employee (inc. historic)",
+      "slug": "pat-employee-tableau-employee-inc-historic",
+      "use_case": "inventory",
+      "source_systems": [
+        "Tableau"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "Tableau"
+      ],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/pat-employee-tableau-employee-inc-historic.json"
+    },
+    {
+      "name": "PAT_Know Your Client (KYC) Process",
+      "slug": "pat-know-your-client-kyc-process",
+      "use_case": "glossary-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Process"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/glossary-governance/pat-know-your-client-kyc-process.json"
+    },
+    {
+      "name": "all assetsd",
+      "slug": "all-assetsd",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/all-assetsd.json"
+    },
+    {
+      "name": "Data Quality Rule Occurence in resource CDQ_DEMO",
+      "slug": "data-quality-rule-occurence-in-resource-cdq-demo",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "Catalog Source",
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/data-quality-rule-occurence-in-resource-cdq-demo.json"
+    },
+    {
+      "name": "Data Quality Rule Occurence in (table EU_CUSTOMERS_CLEANSED)",
+      "slug": "data-quality-rule-occurence-in-table-eu-customers-cleansed",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "DQ Rule",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/data-quality-rule-occurence-in-table-eu-customers-cleansed.json"
+    },
+    {
+      "name": "Technical Assets",
+      "slug": "technical-assets",
+      "use_case": "inventory",
+      "source_systems": [],
+      "asset_types": [],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/technical-assets.json"
+    },
+    {
+      "name": "DQ rule occurrence related to (technical asset related to business term 'Email Address')",
+      "slug": "dq-rule-occurrence-related-to-technical-asset-related-to-bus",
+      "use_case": "data-quality",
+      "source_systems": [],
+      "asset_types": [
+        "Business Term",
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/dq-rule-occurrence-related-to-technical-asset-related-to-bus.json"
+    },
+    {
+      "name": "Databricks Tables",
+      "slug": "databricks-tables",
+      "use_case": "inventory",
+      "source_systems": [
+        "Databricks"
+      ],
+      "asset_types": [
+        "Table"
+      ],
+      "scope": [
+        "Databricks Notebooks"
+      ],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/databricks-tables.json"
+    },
+    {
+      "name": "Rated Databricks Assets",
+      "slug": "rated-databricks-assets",
+      "use_case": "inventory",
+      "source_systems": [
+        "Databricks"
+      ],
+      "asset_types": [],
+      "scope": [
+        "1",
+        "Databricks Notebooks"
+      ],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/rated-databricks-assets.json"
+    },
+    {
+      "name": "Databricks DQ",
+      "slug": "databricks-dq",
+      "use_case": "data-quality",
+      "source_systems": [
+        "Databricks"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "DQ Rule"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/data-quality/databricks-dq.json"
+    },
+    {
+      "name": "Databricks Lineage",
+      "slug": "databricks-lineage",
+      "use_case": "lineage-impact",
+      "source_systems": [
+        "Databricks"
+      ],
+      "asset_types": [
+        "Catalog Source",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/lineage-impact/databricks-lineage.json"
+    },
+    {
+      "name": "AI Model without stakeholders",
+      "slug": "ai-model-without-stakeholders",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "demo how to create reusable search without sharing here",
+      "path": "saved-searches/ai-governance/ai-model-without-stakeholders.json"
+    },
+    {
+      "name": "AI Model without stakeholders v2",
+      "slug": "ai-model-without-stakeholders-v2",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "reusable search without sharing",
+      "path": "saved-searches/ai-governance/ai-model-without-stakeholders-v2.json"
+    },
+    {
+      "name": "AI Model without stakeholders - shared with other users",
+      "slug": "ai-model-without-stakeholders-shared-with-other-users",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model"
+      ],
+      "scope": [],
+      "search_method": "Precise",
+      "has_filters": true,
+      "description": "reusable search shared with all users",
+      "path": "saved-searches/ai-governance/ai-model-without-stakeholders-shared-with-other-users.json"
+    },
+    {
+      "name": "AI Model using PII Data",
+      "slug": "ai-model-using-pii-data",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "AI Model",
+        "Classification",
+        "Risk",
+        "Table"
+      ],
+      "scope": [],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/ai-model-using-pii-data.json"
+    },
+    {
+      "name": "risk templates",
+      "slug": "risk-templates",
+      "use_case": "ai-governance",
+      "source_systems": [],
+      "asset_types": [
+        "Mitigation",
+        "Questionnaire",
+        "Risk"
+      ],
+      "scope": [],
+      "search_method": "nl",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/risk-templates.json"
+    },
+    {
+      "name": "AWS AI Inventory",
+      "slug": "aws-ai-inventory",
+      "use_case": "ai-governance",
+      "source_systems": [
+        "AWS"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Amazon Bedrock",
+        "Amazon SageMaker AI"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/ai-governance/aws-ai-inventory.json"
+    },
+    {
+      "name": "AWS Data Assets",
+      "slug": "aws-data-assets",
+      "use_case": "inventory",
+      "source_systems": [
+        "AWS"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Amazon Athena",
+        "Amazon S3",
+        "Redshift"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/aws-data-assets.json"
+    },
+    {
+      "name": "AWS Glue Inventory",
+      "slug": "aws-glue-inventory",
+      "use_case": "inventory",
+      "source_systems": [
+        "AWS"
+      ],
+      "asset_types": [],
+      "scope": [
+        "Amazon Glue"
+      ],
+      "search_method": "Dynamic",
+      "has_filters": true,
+      "description": "",
+      "path": "saved-searches/inventory/aws-glue-inventory.json"
     }
-  ]
+  ],
+  "saved_search_count": 180
 }

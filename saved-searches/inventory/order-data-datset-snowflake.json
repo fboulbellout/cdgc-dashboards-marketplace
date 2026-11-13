@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "order data Datset - Snowflake",
+  "description": "order data search",
+  "origin": "cdgc-app",
+  "query": "order* data",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.ccgf.models.governance.DataSet\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Data Set\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [],
+    "scope": [
+      "Data Set"
+    ],
+    "search_method": "default"
+  }
+}

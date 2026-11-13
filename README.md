@@ -2,6 +2,8 @@
 
 A catalog of ready-to-deploy **Informatica CDGC dashboards** — browse by use case, industry, source system or requirement, then import into your own CDGC org. Built for humans to *shop* and for AI agents to *learn from and propose* dashboards.
 
+> 🔎 **Also here:** a classified catalog of **180 reusable CDGC saved searches** — tagged by use case, scope, asset type and source system — in [`SAVED_SEARCHES.md`](SAVED_SEARCHES.md) / [`saved-searches/`](saved-searches/) (machine index under `saved_searches` in [`catalog.json`](catalog.json)). A dashboard Search widget can point at any of them.
+
 > **✅ Tested CDGC release:** `IDMC-202610-10M` — the dashboard export/import format is release-specific. Every dashboard here has been deployed and verified on this release (see each file's `tested_releases` and [`releases.json`](releases.json)). Importing into a **different** release may need adjustment — the import tool warns you when the target pod's release isn't in a dashboard's tested list. New releases are re-tested before being added.
 
 ## How to use
@@ -78,7 +80,3 @@ Each dashboard has a **screenshot preview** (real render from the CDGC UI) linke
 ## Privacy
 
 All dashboards are **sanitized** before publishing: emails, phone numbers, IPs, known person names and org/pod deep-links are masked; org id, pod host and internal asset ids are stripped. Deploying mints fresh ids and sets you as owner.
-
-## Reference: new AI Governance asset types
-
-[`AI Governance (new AI-Gov asset types)`](dashboards/ai-governance/ai-governance-new-asset-types.json) is built entirely on the **new CDGC AI Governance asset types** (`AIGovernance.UseCase`, `Risk`, `Mitigation`, `AIModel`/`AISystem`, `AgentIntegration.AIAgent`, `Mcp.MCPServer`) — **not** the legacy `governance.Project`. Use it as the template for AI-governance dashboards on the Oct-2026 release.

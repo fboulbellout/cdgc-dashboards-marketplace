@@ -1,0 +1,25 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "DIM_Customer",
+  "description": "Search for a table with good lineage, DQ, and observability",
+  "origin": "cdgc-app",
+  "query": "DIM_Customer",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.odin.models.relational.Table\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Table\"]}",
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Snowflake\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Snowflake\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [],
+    "scope": [
+      "Snowflake",
+      "Table"
+    ],
+    "search_method": "default"
+  }
+}

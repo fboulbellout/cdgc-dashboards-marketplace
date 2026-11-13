@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Asset classificati sensibili",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "data elements related to classifications with sensitivity in (high) ",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

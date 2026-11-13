@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "find PII related assets",
+  "description": "Find all business & technical assets related to PII entity",
+  "origin": "cdgc-app",
+  "query": "all related to data entity classification PII",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

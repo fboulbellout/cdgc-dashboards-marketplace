@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "Curation Dashboard - 2",
     "core.description": "Dashboard containing assets to review & curate when needed",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -31,6 +34,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -54,6 +58,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -77,6 +82,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -101,6 +107,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -120,6 +127,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -142,6 +150,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "ClaireActivityWidget",
       "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
@@ -156,6 +165,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -178,6 +188,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -199,6 +210,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -221,6 +233,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -246,6 +259,7 @@
       }
     },
     {
+      "idx": 11,
       "order": 11,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -272,6 +286,7 @@
       }
     },
     {
+      "idx": 12,
       "order": 12,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -292,6 +307,7 @@
       }
     },
     {
+      "idx": 13,
       "order": 13,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -315,7 +331,6 @@
   "layout": [],
   "saved_searches": {},
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

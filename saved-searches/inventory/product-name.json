@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "PRODUCT_NAME",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "PRODUCT_NAME",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

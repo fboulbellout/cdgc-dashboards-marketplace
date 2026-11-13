@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Oracle Retail Till Data Quality under 70%",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "dq rule with score less than 70\n ",
+  "filters": [
+    "{\"id\":\"core.origin\",\"value\":{\"must\":{\"terms\":[\"efe732a3537d993380aff0b90d5b8f8b\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"efe732a3537d993380aff0b90d5b8f8b\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [
+      "Oracle"
+    ],
+    "asset_types": [
+      "DQ Rule"
+    ],
+    "scope": [
+      "efe732a3537d993380aff0b90d5b8f8b"
+    ],
+    "search_method": "Dynamic"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "DG Projects",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Projects",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.ccgf.models.governance.Project\",\"com.infa.odin.models.SSRS.Project\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Project\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Precise\"]}},\"options\":[\"Precise\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "Project"
+    ],
+    "search_method": "Precise"
+  }
+}

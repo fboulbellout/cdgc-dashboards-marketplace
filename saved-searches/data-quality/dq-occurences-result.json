@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "dq occurences result",
+  "description": "list dq occurrence result",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.ccgf.models.governance.RuleInstance\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Data Quality Rule Occurrence\"]}",
+    "{\"id\":\"core.createdBy\",\"value\":{\"must\":{\"terms\":[\"3afd50T5yU2gjVLnIkXZe2\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"3afd50T5yU2gjVLnIkXZe2\"]}",
+    "{\"id\":\"com.infa.ccgf.models.governance.RuleType\",\"value\":{\"must\":{\"terms\":[\"Consistency\",\"Validity\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Consistency\",\"Validity\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "3afd50T5yU2gjVLnIkXZe2",
+      "Consistency",
+      "Data Quality Rule Occurrence",
+      "Validity"
+    ],
+    "search_method": "default"
+  }
+}

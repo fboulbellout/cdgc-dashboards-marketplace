@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "dq rule  related to data element related to business term which are cde",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "dq rule  related to data element related to business term which are cde",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term",
+      "DQ Rule"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

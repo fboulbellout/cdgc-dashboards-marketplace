@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "data element in \"Delta Lake AdventureWorks\"",
+  "description": "data element in catalog source \"Delta Lake AdventureWorks\"",
+  "origin": "cdgc-app",
+  "query": "data element in catalog source \"Delta Lake AdventureWorks\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Catalog Source"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

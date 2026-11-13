@@ -1,0 +1,17 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "op1145580",
+  "description": "delta lake schema with lineage",
+  "origin": "cdgc-app",
+  "query": "op1145580",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [],
+    "search_method": "default"
+  }
+}

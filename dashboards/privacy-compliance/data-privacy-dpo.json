@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "Data Privacy @DPO",
     "core.description": "Widgets to get insight on sensitive data assets",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -17,6 +20,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -36,6 +40,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -54,6 +59,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -72,6 +78,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -92,6 +99,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -115,6 +123,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -136,6 +145,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -154,6 +164,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -180,6 +191,7 @@
       "w": 4,
       "x": 0,
       "y": 0,
+      "idx": 0,
       "order": 0
     },
     {
@@ -187,6 +199,7 @@
       "w": 4,
       "x": 4,
       "y": 0,
+      "idx": 1,
       "order": 1
     },
     {
@@ -194,6 +207,7 @@
       "w": 4,
       "x": 8,
       "y": 0,
+      "idx": 2,
       "order": 2
     },
     {
@@ -201,6 +215,7 @@
       "w": 4,
       "x": 0,
       "y": 6,
+      "idx": 3,
       "order": 3
     },
     {
@@ -208,6 +223,7 @@
       "w": 4,
       "x": 4,
       "y": 6,
+      "idx": 4,
       "order": 4
     },
     {
@@ -215,6 +231,7 @@
       "w": 4,
       "x": 8,
       "y": 6,
+      "idx": 5,
       "order": 5
     },
     {
@@ -222,6 +239,7 @@
       "w": 4,
       "x": 0,
       "y": 15,
+      "idx": 6,
       "order": 6
     },
     {
@@ -229,6 +247,7 @@
       "w": 4,
       "x": 4,
       "y": 15,
+      "idx": 7,
       "order": 7
     },
     {
@@ -236,12 +255,12 @@
       "w": 4,
       "x": 8,
       "y": 15,
+      "idx": 8,
       "order": 8
     }
   ],
   "saved_searches": {},
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

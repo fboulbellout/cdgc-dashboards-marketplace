@@ -1,0 +1,24 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "AI Model using PII Data",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "ai model related to technical dataset related to data element related to classification with sensitivity in ( \"Confidential\", \"High Risk Data\")",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "AI Model",
+      "Classification",
+      "Risk",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

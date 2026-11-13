@@ -1,5 +1,158 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {
+    "com.infa.odin.models.custom.ca_3934434871410566802": {
+      "name": "2-Data & Asset Identification",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_3631274725647160307": {
+      "name": "1-Executive Summary",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_5431780459296953637": {
+      "name": "8-Compliance Validation",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_1835381505968326893": {
+      "name": "9-Approval & Documentation",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_7683715292255772050": {
+      "name": "10-Continuous Monitoring",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_4654158585652388741": {
+      "name": "5-Detect Controls",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_8583487239318767014": {
+      "name": "4-Protect Controls",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_3732669930024408272": {
+      "name": "3-Identify Risks",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_5894127350293850628": {
+      "name": "7-Risk Scoring",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_4028683442066152953": {
+      "name": "6-Respond & Remediate",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    }
+  },
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "AI Inventories",
     "core.description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
@@ -8,6 +161,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "TicketsWidget",
       "fullType": "com.infa.application.dashboard.TicketsWidget",
@@ -29,6 +183,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -48,6 +203,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -64,6 +220,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -83,6 +240,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -104,6 +262,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -120,6 +279,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -152,6 +312,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -163,6 +324,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -172,6 +334,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -191,6 +354,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -211,6 +375,7 @@
       }
     },
     {
+      "idx": 11,
       "order": 11,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -231,6 +396,7 @@
       }
     },
     {
+      "idx": 12,
       "order": 12,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -251,6 +417,7 @@
       }
     },
     {
+      "idx": 13,
       "order": 13,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -295,7 +462,6 @@
     }
   },
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

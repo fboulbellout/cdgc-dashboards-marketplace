@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "All assets related to Reports that were updated in the last 90 days",
+  "description": "Assets that are related to reports and have been updated so may need impact analysis",
+  "origin": "cdgc-app",
+  "query": "All assets related to Reports",
+  "filters": [
+    "{\"id\":\"core.modifiedOn\",\"value\":{\"must\":{\"terms\":[],\"range\":{\"gt\":\"2025-02-28T08:00:00.000Z\"},\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"last90Days\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "last90Days"
+    ],
+    "search_method": "Dynamic"
+  }
+}

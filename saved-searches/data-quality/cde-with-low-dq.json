@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "CDE with low DQ",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "(data element related to business terms which are cde) related to dq rule with Threshold Result \"Not Acceptable\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term",
+      "DQ Rule",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

@@ -1,5 +1,259 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {
+    "com.infa.odin.models.custom.ca_3934434871410566802": {
+      "name": "2-Data & Asset Identification",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_3631274725647160307": {
+      "name": "1-Executive Summary",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_8391881445861137994": {
+      "name": "Questionnaire Risk Category",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "🚫 PROHIBITED",
+        "⚠️ HIGH RISK",
+        "⚡ LIMITED RISK",
+        "✅ LOW RISK",
+        "🟢 MINIMAL RISK",
+        "NOT EVALUATED YET"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Regulation",
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_5431780459296953637": {
+      "name": "8-Compliance Validation",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_1835381505968326893": {
+      "name": "9-Approval & Documentation",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_7683715292255772050": {
+      "name": "10-Continuous Monitoring",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_4654158585652388741": {
+      "name": "5-Detect Controls",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.risk_category": {
+      "name": "Risk Category",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "Unacceptable",
+        "Limited",
+        "High",
+        "Minimal",
+        "Unknown"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.AIModel.AIModel",
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": "EU AI Act Risk Categories"
+    },
+    "com.infa.odin.models.custom.ca_713191444319232357": {
+      "name": "Risk Status",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⬜⬜⬜⬜⬜",
+        "🟥🟥🟥🟥🟥",
+        "🟨🟨🟨🟨🟨",
+        "🟩🟩🟩🟩🟩",
+        "⬛⬛⬛⬛⬛"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project",
+        "com.infa.ccgf.models.AIModel.AIModel",
+        "com.infa.ccgf.models.AIModel.AISystem"
+      ],
+      "description": "consolidated risk status"
+    },
+    "com.infa.odin.models.custom.ca_8583487239318767014": {
+      "name": "4-Protect Controls",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_5719284448866206850": {
+      "name": "Traffic Risk Status",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⚫ ⚫ ⚫",
+        "🔴 ⚫ ⚫",
+        "⚫ 🟠 ⚫",
+        "⚫ ⚫ 🟢"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_3402316642552464067": {
+      "name": "Lifecycle Stage",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜",
+        "🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜",
+        "🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜",
+        "🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜",
+        "🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜",
+        "🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜",
+        "🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜",
+        "🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜",
+        "🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜",
+        "🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦",
+        "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": "Lifecycle Stage"
+    },
+    "com.infa.odin.models.custom.ca_5894127350293850628": {
+      "name": "7-Risk Scoring",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_3732669930024408272": {
+      "name": "3-Identify Risks",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_5270135649268872207": {
+      "name": "Questionnaire Risk Score",
+      "datatype": "NumericValue::Decimal",
+      "lov": [],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Regulation",
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": "4.5 - 5.0\t🚫 PROHIBITED\tCannot be deployed under EU AI Act 3.5 - 4.4\t⚠️ HIGH RISK\tSignificant compliance requirements 2.5 - 3.4\t⚡ LIMITED RISK\tTransparency obligations 1.5 - 2.4\t✅ LOW RISK\tMinimal requirements 0.0 - 1.4\t🟢 MINIMAL RISK\tNo specific requirements"
+    },
+    "com.infa.odin.models.custom.ca_4028683442066152953": {
+      "name": "6-Respond & Remediate",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⏳ Not Started",
+        "📝 Draft",
+        "🚀 In Progress",
+        "🏁 Completed"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    }
+  },
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "AI Governance",
     "core.description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
@@ -8,6 +262,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "TicketsWidget",
       "fullType": "com.infa.application.dashboard.TicketsWidget",
@@ -30,6 +285,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -50,6 +306,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -69,6 +326,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -88,6 +346,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -109,6 +368,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -128,6 +388,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -149,6 +410,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -160,6 +422,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -186,6 +449,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -212,6 +476,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -221,6 +486,7 @@
       }
     },
     {
+      "idx": 11,
       "order": 11,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -241,6 +507,7 @@
       }
     },
     {
+      "idx": 12,
       "order": 12,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -263,6 +530,7 @@
       }
     },
     {
+      "idx": 13,
       "order": 13,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -283,6 +551,7 @@
       }
     },
     {
+      "idx": 14,
       "order": 14,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -303,6 +572,7 @@
       }
     },
     {
+      "idx": 15,
       "order": 15,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -324,6 +594,7 @@
       }
     },
     {
+      "idx": 16,
       "order": 16,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -346,6 +617,7 @@
       }
     },
     {
+      "idx": 17,
       "order": 17,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -366,6 +638,7 @@
       }
     },
     {
+      "idx": 18,
       "order": 18,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -387,6 +660,7 @@
       }
     },
     {
+      "idx": 19,
       "order": 19,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -396,6 +670,7 @@
       }
     },
     {
+      "idx": 20,
       "order": 20,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -425,6 +700,7 @@
       }
     },
     {
+      "idx": 21,
       "order": 21,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -445,6 +721,7 @@
       }
     },
     {
+      "idx": 22,
       "order": 22,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -466,6 +743,7 @@
       }
     },
     {
+      "idx": 23,
       "order": 23,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -492,6 +770,7 @@
       "w": 4,
       "x": 0,
       "y": 0,
+      "idx": 0,
       "order": 0
     },
     {
@@ -499,6 +778,7 @@
       "w": 4,
       "x": 4,
       "y": 0,
+      "idx": 1,
       "order": 1
     },
     {
@@ -506,6 +786,7 @@
       "w": 4,
       "x": 8,
       "y": 0,
+      "idx": 2,
       "order": 2
     },
     {
@@ -513,6 +794,7 @@
       "w": 4,
       "x": 0,
       "y": 6,
+      "idx": 3,
       "order": 3
     },
     {
@@ -520,6 +802,7 @@
       "w": 4,
       "x": 4,
       "y": 6,
+      "idx": 4,
       "order": 4
     },
     {
@@ -527,6 +810,7 @@
       "w": 4,
       "x": 8,
       "y": 6,
+      "idx": 5,
       "order": 5
     },
     {
@@ -534,6 +818,7 @@
       "w": 4,
       "x": 0,
       "y": 12,
+      "idx": 6,
       "order": 6
     },
     {
@@ -541,6 +826,7 @@
       "w": 4,
       "x": 4,
       "y": 12,
+      "idx": 7,
       "order": 7
     },
     {
@@ -548,6 +834,7 @@
       "w": 4,
       "x": 8,
       "y": 12,
+      "idx": 8,
       "order": 8
     },
     {
@@ -555,6 +842,7 @@
       "w": 4,
       "x": 0,
       "y": 18,
+      "idx": 9,
       "order": 9
     },
     {
@@ -562,6 +850,7 @@
       "w": 4,
       "x": 4,
       "y": 18,
+      "idx": 10,
       "order": 10
     },
     {
@@ -569,6 +858,7 @@
       "w": 4,
       "x": 8,
       "y": 18,
+      "idx": 11,
       "order": 11
     },
     {
@@ -576,6 +866,7 @@
       "w": 4,
       "x": 0,
       "y": 24,
+      "idx": 12,
       "order": 12
     },
     {
@@ -583,6 +874,7 @@
       "w": 4,
       "x": 4,
       "y": 24,
+      "idx": 13,
       "order": 13
     },
     {
@@ -590,6 +882,7 @@
       "w": 4,
       "x": 8,
       "y": 24,
+      "idx": 14,
       "order": 14
     },
     {
@@ -597,6 +890,7 @@
       "w": 4,
       "x": 0,
       "y": 30,
+      "idx": 15,
       "order": 15
     },
     {
@@ -604,6 +898,7 @@
       "w": 4,
       "x": 4,
       "y": 30,
+      "idx": 16,
       "order": 16
     },
     {
@@ -611,6 +906,7 @@
       "w": 4,
       "x": 8,
       "y": 30,
+      "idx": 17,
       "order": 17
     },
     {
@@ -618,6 +914,7 @@
       "w": 4,
       "x": 0,
       "y": 36,
+      "idx": 18,
       "order": 18
     },
     {
@@ -625,6 +922,7 @@
       "w": 4,
       "x": 4,
       "y": 36,
+      "idx": 19,
       "order": 19
     },
     {
@@ -632,6 +930,7 @@
       "w": 4,
       "x": 8,
       "y": 36,
+      "idx": 20,
       "order": 20
     },
     {
@@ -639,6 +938,7 @@
       "w": 4,
       "x": 0,
       "y": 42,
+      "idx": 21,
       "order": 21
     },
     {
@@ -646,6 +946,7 @@
       "w": 4,
       "x": 4,
       "y": 42,
+      "idx": 22,
       "order": 22
     },
     {
@@ -653,12 +954,12 @@
       "w": 4,
       "x": 8,
       "y": 42,
+      "idx": 23,
       "order": 23
     }
   ],
   "saved_searches": {},
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

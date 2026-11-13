@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "what business glossaries relate to GDPR Policy",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "what business glossaries relate to GDPR Policy",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Policy"
+    ],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

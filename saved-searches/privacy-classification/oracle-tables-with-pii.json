@@ -1,0 +1,27 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "oracle tables with PII",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "tables related to data entity classification PII ",
+  "filters": [
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Oracle\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Oracle\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [
+      "Oracle"
+    ],
+    "asset_types": [
+      "Classification",
+      "Table"
+    ],
+    "scope": [
+      "Oracle"
+    ],
+    "search_method": "Dynamic"
+  }
+}

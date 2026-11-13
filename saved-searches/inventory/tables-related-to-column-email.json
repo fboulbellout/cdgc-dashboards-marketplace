@@ -1,0 +1,20 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "tables related to column Email",
+  "description": "Email Columns",
+  "origin": "cdgc-app",
+  "query": "tables related to column Email",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Column",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

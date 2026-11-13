@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "High Risk AI Models Not Classified as High Risk",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": " AI models with 'Risk Category'  not in ('High') and related to (dataset,technical dataset) related to data element related to business terms related to policy 'Personally Identifiable Information*'",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "AI Model",
+      "Business Term",
+      "Policy",
+      "Risk",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

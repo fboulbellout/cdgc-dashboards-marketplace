@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Element with declined BG Term curation demo",
+  "description": "Element with declined BG Term curation",
+  "origin": "cdgc-app",
+  "query": "data elements related with curation status DECLINED to business terms",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.odin.models.file.excel.Column\",\"com.infa.odin.models.relational.Column\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Column\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term"
+    ],
+    "scope": [
+      "Column"
+    ],
+    "search_method": "default"
+  }
+}

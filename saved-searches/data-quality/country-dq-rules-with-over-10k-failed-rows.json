@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Country DQ rules with over 10K failed rows",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "country",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.ccgf.models.governance.RuleInstance\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Data Quality Rule Occurrence\"]}",
+    "{\"id\":\"com.infa.ccgf.models.governance.exception\",\"value\":{\"must\":{\"terms\":[],\"range\":{\"gt\":\"10000\"},\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"greater than\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Precise\"]}},\"options\":[\"Precise\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "DQ Rule"
+    ],
+    "scope": [
+      "Data Quality Rule Occurrence",
+      "greater than"
+    ],
+    "search_method": "Precise"
+  }
+}

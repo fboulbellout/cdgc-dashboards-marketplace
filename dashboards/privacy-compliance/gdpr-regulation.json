@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "GDPR Regulation",
     "core.description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 1,
       "widgetType": "TicketsWidget",
       "fullType": "com.infa.application.dashboard.TicketsWidget",
@@ -29,6 +32,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -49,6 +53,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -67,6 +72,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -86,6 +92,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 5,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -97,6 +104,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -117,6 +125,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 7,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -148,7 +157,6 @@
     }
   },
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

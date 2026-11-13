@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Risk Assessment Questionnaires",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "regulation in regulation related to regulation \"Risk Assessment Questionnaires\"",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Questionnaire",
+      "Risk"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

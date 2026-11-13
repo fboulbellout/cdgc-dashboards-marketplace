@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Technical dataset with sensitive data",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "technical dataset related to data element related to classification with sensitivity in (CONFIDENTIAL,\"HIGH RISK DATA\")",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Classification",
+      "Risk",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

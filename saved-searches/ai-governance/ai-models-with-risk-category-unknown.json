@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "AI models with 'Risk Category' 'Unknown'",
+  "description": "search for all AI Models not compliants with EU AI Act",
+  "origin": "cdgc-app",
+  "query": " AI models with 'Risk Category' 'Unknown'",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "AI Model"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

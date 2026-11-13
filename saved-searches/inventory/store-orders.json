@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Store Orders",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Store Orders",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.odin.models.relational.View\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"View\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "View"
+    ],
+    "search_method": "Dynamic"
+  }
+}

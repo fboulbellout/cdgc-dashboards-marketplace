@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "_columns related to data classification 'Postal Code'",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "columns related to data classification 'Postal Code'",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Query\"]}},\"options\":[\"Query\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification",
+      "Column"
+    ],
+    "scope": [],
+    "search_method": "Query"
+  }
+}

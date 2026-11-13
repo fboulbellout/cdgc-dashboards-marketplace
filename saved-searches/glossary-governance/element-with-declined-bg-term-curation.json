@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Element with declined BG Term curation",
+  "description": "Element with declined BG Term curation",
+  "origin": "cdgc-app",
+  "query": "data elements related with curation status DECLINED to business terms",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

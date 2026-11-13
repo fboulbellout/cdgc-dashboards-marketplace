@@ -1,0 +1,24 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "All assets related to data models and updated in the last 90 days",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "all related to (AI Models)",
+  "filters": [
+    "{\"id\":\"core.modifiedOn\",\"value\":{\"must\":{\"terms\":[],\"range\":{\"gt\":\"2025-03-23T07:00:00.000Z\"},\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"last90Days\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "AI Model"
+    ],
+    "scope": [
+      "last90Days"
+    ],
+    "search_method": "Dynamic"
+  }
+}

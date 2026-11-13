@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "User Adoption",
     "core.description": "Sample dashboard to mesure catalog adoption",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -30,6 +33,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -57,6 +61,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -77,6 +82,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -99,6 +105,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -122,6 +129,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -146,6 +154,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -172,6 +181,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -201,7 +211,6 @@
   "layout": [],
   "saved_searches": {},
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

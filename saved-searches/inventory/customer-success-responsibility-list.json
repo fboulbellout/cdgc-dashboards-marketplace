@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Customer Success Responsibility List",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.stakeholderIdentity\",\"value\":{\"must\":{\"terms\":[\"kl9FPetFNOphReoJkHj0SE\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"kl9FPetFNOphReoJkHj0SE\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "kl9FPetFNOphReoJkHj0SE"
+    ],
+    "search_method": "Dynamic"
+  }
+}

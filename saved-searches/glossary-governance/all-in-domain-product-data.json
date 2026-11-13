@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "all in domain \"Product Data\"",
+  "description": "find all product data business assets",
+  "origin": "cdgc-app",
+  "query": "all in domain \"Product Data\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Domain"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

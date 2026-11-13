@@ -1,5 +1,109 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {
+    "com.infa.odin.models.custom.ca_8391881445861137994": {
+      "name": "Questionnaire Risk Category",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "🚫 PROHIBITED",
+        "⚠️ HIGH RISK",
+        "⚡ LIMITED RISK",
+        "✅ LOW RISK",
+        "🟢 MINIMAL RISK",
+        "NOT EVALUATED YET"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Regulation",
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_713191444319232357": {
+      "name": "Risk Status",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⬜⬜⬜⬜⬜",
+        "🟥🟥🟥🟥🟥",
+        "🟨🟨🟨🟨🟨",
+        "🟩🟩🟩🟩🟩",
+        "⬛⬛⬛⬛⬛"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project",
+        "com.infa.ccgf.models.AIModel.AIModel",
+        "com.infa.ccgf.models.AIModel.AISystem"
+      ],
+      "description": "consolidated risk status"
+    },
+    "com.infa.odin.models.custom.risk_category": {
+      "name": "Risk Category",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "Unacceptable",
+        "Limited",
+        "High",
+        "Minimal",
+        "Unknown"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.AIModel.AIModel",
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": "EU AI Act Risk Categories"
+    },
+    "com.infa.odin.models.custom.ca_5719284448866206850": {
+      "name": "Traffic Risk Status",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "⚫ ⚫ ⚫",
+        "🔴 ⚫ ⚫",
+        "⚫ 🟠 ⚫",
+        "⚫ ⚫ 🟢"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": ""
+    },
+    "com.infa.odin.models.custom.ca_3402316642552464067": {
+      "name": "Lifecycle Stage",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜",
+        "🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜",
+        "🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜",
+        "🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜",
+        "🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜",
+        "🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜",
+        "🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜",
+        "🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜",
+        "🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜",
+        "🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦",
+        "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
+      ],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": "Lifecycle Stage"
+    },
+    "com.infa.odin.models.custom.ca_5270135649268872207": {
+      "name": "Questionnaire Risk Score",
+      "datatype": "NumericValue::Decimal",
+      "lov": [],
+      "multivalued": false,
+      "assetTypes": [
+        "com.infa.ccgf.models.governance.Regulation",
+        "com.infa.ccgf.models.governance.Project"
+      ],
+      "description": "4.5 - 5.0\t🚫 PROHIBITED\tCannot be deployed under EU AI Act 3.5 - 4.4\t⚠️ HIGH RISK\tSignificant compliance requirements 2.5 - 3.4\t⚡ LIMITED RISK\tTransparency obligations 1.5 - 2.4\t✅ LOW RISK\tMinimal requirements 0.0 - 1.4\t🟢 MINIMAL RISK\tNo specific requirements"
+    }
+  },
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "AI Governance - Risk View",
     "core.description": "Default dashboard for Artificial Intelligence Compliance Officer that should help them to ensure usage of AI/ML is compliant with company ethics & regulations.",
@@ -8,6 +112,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "TicketsWidget",
       "fullType": "com.infa.application.dashboard.TicketsWidget",
@@ -30,6 +135,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -51,6 +157,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -72,6 +179,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -92,6 +200,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -112,6 +221,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -133,6 +243,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -153,6 +264,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -172,6 +284,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -192,6 +305,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -212,6 +326,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -238,6 +353,7 @@
       "w": 4,
       "x": 0,
       "y": 0,
+      "idx": 0,
       "order": 0
     },
     {
@@ -245,6 +361,7 @@
       "w": 4,
       "x": 4,
       "y": 0,
+      "idx": 1,
       "order": 1
     },
     {
@@ -252,6 +369,7 @@
       "w": 4,
       "x": 8,
       "y": 0,
+      "idx": 2,
       "order": 2
     },
     {
@@ -259,6 +377,7 @@
       "w": 4,
       "x": 0,
       "y": 6,
+      "idx": 3,
       "order": 3
     },
     {
@@ -266,6 +385,7 @@
       "w": 4,
       "x": 4,
       "y": 6,
+      "idx": 4,
       "order": 4
     },
     {
@@ -273,6 +393,7 @@
       "w": 4,
       "x": 8,
       "y": 6,
+      "idx": 5,
       "order": 5
     },
     {
@@ -280,6 +401,7 @@
       "w": 4,
       "x": 0,
       "y": 12,
+      "idx": 6,
       "order": 6
     },
     {
@@ -287,6 +409,7 @@
       "w": 4,
       "x": 4,
       "y": 12,
+      "idx": 7,
       "order": 7
     },
     {
@@ -294,6 +417,7 @@
       "w": 4,
       "x": 8,
       "y": 12,
+      "idx": 8,
       "order": 8
     },
     {
@@ -301,6 +425,7 @@
       "w": 4,
       "x": 0,
       "y": 18,
+      "idx": 9,
       "order": 9
     },
     {
@@ -308,6 +433,7 @@
       "w": 4,
       "x": 4,
       "y": 18,
+      "idx": 10,
       "order": 10
     }
   ],
@@ -332,7 +458,6 @@
     }
   },
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

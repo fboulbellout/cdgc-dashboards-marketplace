@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Powercenter items",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Informatica PowerCenter\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Informatica PowerCenter\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Precise\"]}},\"options\":[\"Precise\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "Informatica PowerCenter"
+    ],
+    "search_method": "Precise"
+  }
+}

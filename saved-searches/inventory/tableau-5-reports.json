@@ -1,0 +1,28 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Tableau 5* Reports",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.supplement.averageRating\",\"value\":{\"must\":{\"terms\":[],\"range\":{\"gte\":\"5\"},\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"5\"]}",
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Tableau\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Tableau\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Query\"]}},\"options\":[\"Query\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Tableau"
+    ],
+    "asset_types": [
+      "Table"
+    ],
+    "scope": [
+      "5",
+      "Tableau"
+    ],
+    "search_method": "Query"
+  }
+}

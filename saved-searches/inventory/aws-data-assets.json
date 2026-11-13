@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "AWS Data Assets",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Amazon Athena\",\"Amazon S3\",\"Redshift\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Amazon Athena\",\"Amazon S3\",\"Redshift\"]}",
+    "{\"id\": \"SearchMethod\", \"value\": {\"must\": {\"terms\": [\"Dynamic\"]}}, \"options\": [\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "AWS"
+    ],
+    "asset_types": [],
+    "scope": [
+      "Amazon Athena",
+      "Amazon S3",
+      "Redshift"
+    ],
+    "search_method": "Dynamic"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "SQLSERVER_dbo",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "dbo\n",
+  "filters": [
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Microsoft SQL Server\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Microsoft SQL Server\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "Microsoft SQL Server"
+    ],
+    "search_method": "Dynamic"
+  }
+}

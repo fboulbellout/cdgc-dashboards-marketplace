@@ -1,0 +1,17 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Data Set senza stakeholder",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Data Set without stakeholder",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [],
+    "search_method": "default"
+  }
+}

@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "Data Governance Dashboard",
     "core.description": "This is your home page for Data Governance and Catalog. You can customize the widgets on this page. You can also create new dashboards, add widgets for particular governance themes, and set one of the dashboards as the default home page when you log in. To modify or remove that description, edit this dashboard.",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -17,6 +20,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -47,6 +51,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -75,6 +80,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "TicketsWidget",
       "fullType": "com.infa.application.dashboard.TicketsWidget",
@@ -97,6 +103,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "ClaireActivityWidget",
       "fullType": "com.infa.application.dashboard.ClaireActivityWidget",
@@ -109,6 +116,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -131,6 +139,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -153,6 +162,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -163,6 +173,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -173,6 +184,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -197,6 +209,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -216,6 +229,7 @@
       }
     },
     {
+      "idx": 11,
       "order": 11,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -237,6 +251,7 @@
       }
     },
     {
+      "idx": 12,
       "order": 12,
       "widgetType": "JobsWidget",
       "fullType": "com.infa.application.dashboard.JobsWidget",
@@ -247,6 +262,7 @@
       }
     },
     {
+      "idx": 13,
       "order": 13,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -268,6 +284,7 @@
       }
     },
     {
+      "idx": 14,
       "order": 14,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -294,6 +311,7 @@
       "w": 4,
       "x": 0,
       "y": 0,
+      "idx": 0,
       "order": 0
     },
     {
@@ -301,6 +319,7 @@
       "w": 4,
       "x": 4,
       "y": 0,
+      "idx": 1,
       "order": 1
     },
     {
@@ -308,6 +327,7 @@
       "w": 4,
       "x": 8,
       "y": 0,
+      "idx": 2,
       "order": 2
     },
     {
@@ -315,6 +335,7 @@
       "w": 4,
       "x": 0,
       "y": 6,
+      "idx": 3,
       "order": 3
     },
     {
@@ -322,6 +343,7 @@
       "w": 4,
       "x": 4,
       "y": 6,
+      "idx": 4,
       "order": 4
     },
     {
@@ -329,6 +351,7 @@
       "w": 4,
       "x": 8,
       "y": 6,
+      "idx": 5,
       "order": 5
     },
     {
@@ -336,6 +359,7 @@
       "w": 4,
       "x": 0,
       "y": 11,
+      "idx": 6,
       "order": 6
     },
     {
@@ -343,6 +367,7 @@
       "w": 4,
       "x": 4,
       "y": 11,
+      "idx": 7,
       "order": 7
     },
     {
@@ -350,6 +375,7 @@
       "w": 4,
       "x": 8,
       "y": 17,
+      "idx": 8,
       "order": 8
     },
     {
@@ -357,6 +383,7 @@
       "w": 4,
       "x": 0,
       "y": 17,
+      "idx": 9,
       "order": 9
     },
     {
@@ -364,6 +391,7 @@
       "w": 4,
       "x": 4,
       "y": 17,
+      "idx": 10,
       "order": 10
     },
     {
@@ -371,6 +399,7 @@
       "w": 4,
       "x": 8,
       "y": 11,
+      "idx": 11,
       "order": 11
     },
     {
@@ -378,6 +407,7 @@
       "w": 4,
       "x": 0,
       "y": 23,
+      "idx": 12,
       "order": 12
     },
     {
@@ -385,6 +415,7 @@
       "w": 4,
       "x": 4,
       "y": 23,
+      "idx": 13,
       "order": 13
     },
     {
@@ -392,12 +423,12 @@
       "w": 4,
       "x": 8,
       "y": 23,
+      "idx": 14,
       "order": 14
     }
   ],
   "saved_searches": {},
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

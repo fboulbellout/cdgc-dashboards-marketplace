@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "data element related to glossary country",
+  "description": "data element related to glossary country",
+  "origin": "cdgc-app",
+  "query": "data element related to glossary country",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Query\"]}},\"options\":[\"Query\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term"
+    ],
+    "scope": [],
+    "search_method": "Query"
+  }
+}

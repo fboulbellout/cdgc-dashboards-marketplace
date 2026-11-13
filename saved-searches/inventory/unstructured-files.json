@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "unstructured files",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "file with name *.docx or *.pdf or *.pptx and in catalog source \"Agent local files\"",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Catalog Source"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "PAT_employee details",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "employee details",
+  "filters": [
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Microsoft SQL Server\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Microsoft SQL Server\"]}",
+    "{\"id\":\"core.aggregatedByTypes\",\"value\":{\"must\":{\"terms\":[\"com.infa.cdmp.marketplace.DataCollection\"],\"exists\":false},\"must_not\":{\"terms\":[\"com.infa.ccgf.models.governance.DQProfileRun\",\"com.infa.ccgf.models.governance.DQResult\",\"com.infa.ccgf.models.governance.DQScoreAggregationBucket\",\"com.infa.ccgf.models.governance.RuleInstance\",\"com.infa.ccgf.models.governance.RuleTemplate\",\"core.accesscontrol.MetadataAccessControlPolicy\"],\"exists\":false}},\"options\":[\"Added To\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Precise\"]}},\"options\":[\"Precise\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "Added To",
+      "Microsoft SQL Server"
+    ],
+    "search_method": "Precise"
+  }
+}

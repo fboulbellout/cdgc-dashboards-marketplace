@@ -1,0 +1,28 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "all business assets without dq occurrences",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Business Term, Policy, Data Set, Domain,Policy, AI model, AI system,subdomain,process,project, regulation, geography, business area,Data Quality Rule Template,Legal Entity,Manual Data Element,Metric",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "AI Model",
+      "AI System",
+      "Business Term",
+      "DQ Rule",
+      "Domain",
+      "Metric",
+      "Policy",
+      "Process"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

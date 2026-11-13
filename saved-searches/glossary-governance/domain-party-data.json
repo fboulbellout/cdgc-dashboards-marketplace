@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "domain 'Party Data'",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "domain 'Party Data'",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Domain"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

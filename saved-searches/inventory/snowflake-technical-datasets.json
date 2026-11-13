@@ -1,0 +1,22 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Snowflake technical datasets",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "(technical dataset,schema,database) in resource snowflake_retail_dwh",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [
+      "Catalog Source",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

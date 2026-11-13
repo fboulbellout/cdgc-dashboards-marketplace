@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "Data Quality and Observability",
     "core.description": "",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -17,6 +20,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -26,6 +30,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -36,6 +41,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -47,6 +53,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -58,6 +65,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -118,6 +126,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -178,6 +187,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -239,6 +249,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -259,6 +270,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -268,6 +280,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -277,6 +290,7 @@
       }
     },
     {
+      "idx": 11,
       "order": 11,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -286,6 +300,7 @@
       }
     },
     {
+      "idx": 12,
       "order": 12,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -297,6 +312,7 @@
       }
     },
     {
+      "idx": 13,
       "order": 13,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -308,6 +324,7 @@
       }
     },
     {
+      "idx": 14,
       "order": 14,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -329,6 +346,7 @@
       }
     },
     {
+      "idx": 15,
       "order": 15,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -338,6 +356,7 @@
       }
     },
     {
+      "idx": 16,
       "order": 16,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -347,6 +366,7 @@
       }
     },
     {
+      "idx": 17,
       "order": 17,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -356,6 +376,7 @@
       }
     },
     {
+      "idx": 18,
       "order": 18,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -366,6 +387,7 @@
       }
     },
     {
+      "idx": 19,
       "order": 19,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -390,6 +412,7 @@
       }
     },
     {
+      "idx": 20,
       "order": 20,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -406,6 +429,7 @@
       }
     },
     {
+      "idx": 21,
       "order": 21,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -415,6 +439,7 @@
       }
     },
     {
+      "idx": 22,
       "order": 22,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -441,6 +466,7 @@
       "w": 4,
       "x": 0,
       "y": 0,
+      "idx": 0,
       "order": 0
     },
     {
@@ -448,6 +474,7 @@
       "w": 4,
       "x": 4,
       "y": 0,
+      "idx": 1,
       "order": 1
     },
     {
@@ -455,6 +482,7 @@
       "w": 4,
       "x": 8,
       "y": 0,
+      "idx": 2,
       "order": 2
     },
     {
@@ -462,6 +490,7 @@
       "w": 4,
       "x": 0,
       "y": 6,
+      "idx": 3,
       "order": 3
     },
     {
@@ -469,6 +498,7 @@
       "w": 4,
       "x": 4,
       "y": 6,
+      "idx": 4,
       "order": 4
     },
     {
@@ -476,6 +506,7 @@
       "w": 4,
       "x": 8,
       "y": 6,
+      "idx": 5,
       "order": 5
     },
     {
@@ -483,6 +514,7 @@
       "w": 4,
       "x": 4,
       "y": 12,
+      "idx": 6,
       "order": 6
     },
     {
@@ -490,6 +522,7 @@
       "w": 4,
       "x": 4,
       "y": 18,
+      "idx": 7,
       "order": 7
     },
     {
@@ -497,6 +530,7 @@
       "w": 4,
       "x": 0,
       "y": 12,
+      "idx": 8,
       "order": 8
     },
     {
@@ -504,6 +538,7 @@
       "w": 4,
       "x": 0,
       "y": 18,
+      "idx": 9,
       "order": 9
     },
     {
@@ -511,6 +546,7 @@
       "w": 4,
       "x": 4,
       "y": 24,
+      "idx": 10,
       "order": 10
     },
     {
@@ -518,6 +554,7 @@
       "w": 4,
       "x": 8,
       "y": 12,
+      "idx": 11,
       "order": 11
     },
     {
@@ -525,6 +562,7 @@
       "w": 4,
       "x": 0,
       "y": 24,
+      "idx": 12,
       "order": 12
     },
     {
@@ -532,6 +570,7 @@
       "w": 4,
       "x": 4,
       "y": 30,
+      "idx": 13,
       "order": 13
     },
     {
@@ -539,6 +578,7 @@
       "w": 4,
       "x": 8,
       "y": 18,
+      "idx": 14,
       "order": 14
     },
     {
@@ -546,6 +586,7 @@
       "w": 4,
       "x": 0,
       "y": 30,
+      "idx": 15,
       "order": 15
     },
     {
@@ -553,6 +594,7 @@
       "w": 4,
       "x": 4,
       "y": 36,
+      "idx": 16,
       "order": 16
     },
     {
@@ -560,6 +602,7 @@
       "w": 4,
       "x": 8,
       "y": 24,
+      "idx": 17,
       "order": 17
     },
     {
@@ -567,6 +610,7 @@
       "w": 4,
       "x": 0,
       "y": 36,
+      "idx": 18,
       "order": 18
     },
     {
@@ -574,6 +618,7 @@
       "w": 4,
       "x": 4,
       "y": 42,
+      "idx": 19,
       "order": 19
     },
     {
@@ -581,6 +626,7 @@
       "w": 4,
       "x": 8,
       "y": 30,
+      "idx": 20,
       "order": 20
     },
     {
@@ -588,6 +634,7 @@
       "w": 4,
       "x": 0,
       "y": 42,
+      "idx": 21,
       "order": 21
     },
     {
@@ -595,6 +642,7 @@
       "w": 4,
       "x": 4,
       "y": 51,
+      "idx": 22,
       "order": 22
     }
   ],
@@ -609,7 +657,6 @@
     }
   },
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

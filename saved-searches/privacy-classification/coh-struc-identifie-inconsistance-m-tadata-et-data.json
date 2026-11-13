@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "COH-STRUC - identifie inconsistance métadata et data",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "table related to columns related to data element classification (fr_telephone,fr_indicatif_telephone)",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Classification",
+      "Column",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

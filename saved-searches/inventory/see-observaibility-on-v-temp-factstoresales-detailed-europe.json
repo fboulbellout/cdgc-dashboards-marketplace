@@ -1,0 +1,17 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "see observaibility on V_TEMP_FACTSTORESALES_DETAILED_EUROPE",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "V_TEMP_FACTSTORESALES_DETAILED_EUROPE",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [],
+    "search_method": "default"
+  }
+}

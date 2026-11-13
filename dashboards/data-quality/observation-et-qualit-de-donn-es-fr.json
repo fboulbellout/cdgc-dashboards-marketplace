@@ -1,5 +1,7 @@
 {
   "schema": "cdgc-dashboard-export/v1",
+  "custom_attributes": {},
+  "cdgc_release": "IDMC-202610-10M",
   "dashboard": {
     "core.name": "Observation et Qualité de données - FR",
     "core.description": "",
@@ -8,6 +10,7 @@
   },
   "widgets": [
     {
+      "idx": 0,
       "order": 0,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -32,6 +35,7 @@
       }
     },
     {
+      "idx": 1,
       "order": 1,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -58,6 +62,7 @@
       }
     },
     {
+      "idx": 2,
       "order": 2,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -67,6 +72,7 @@
       }
     },
     {
+      "idx": 3,
       "order": 3,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -77,6 +83,7 @@
       }
     },
     {
+      "idx": 4,
       "order": 4,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -92,6 +99,7 @@
       }
     },
     {
+      "idx": 5,
       "order": 5,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -107,6 +115,7 @@
       }
     },
     {
+      "idx": 6,
       "order": 6,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -117,6 +126,7 @@
       }
     },
     {
+      "idx": 7,
       "order": 7,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -126,6 +136,7 @@
       }
     },
     {
+      "idx": 8,
       "order": 8,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -148,6 +159,7 @@
       }
     },
     {
+      "idx": 9,
       "order": 9,
       "widgetType": "SearchWidget",
       "fullType": "com.infa.application.dashboard.SearchWidget",
@@ -168,6 +180,7 @@
       }
     },
     {
+      "idx": 10,
       "order": 10,
       "widgetType": "DataObservabilityWidget",
       "fullType": "com.infa.application.dashboard.DataObservabilityWidget",
@@ -182,6 +195,7 @@
       }
     },
     {
+      "idx": 11,
       "order": 11,
       "widgetType": "NoticeBoardWidget",
       "fullType": "com.infa.application.dashboard.NoticeBoardWidget",
@@ -191,6 +205,7 @@
       }
     },
     {
+      "idx": 12,
       "order": 12,
       "widgetType": "DataQualityWidget",
       "fullType": "com.infa.application.dashboard.DataQualityWidget",
@@ -204,7 +219,6 @@
   "layout": [],
   "saved_searches": {},
   "warnings": [],
-  "cdgc_release": "IDMC-202610-10M",
   "tested_releases": [
     "IDMC-202610-10M"
   ],

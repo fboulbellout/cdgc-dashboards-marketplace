@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "data elements related with curation status in ('ACCEPTED', AUTO_ACCEPTED) to glossary",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "data elements related with curation status in ('ACCEPTED', AUTO_ACCEPTED) to glossary",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term"
+    ],
+    "scope": [],
+    "search_method": "Dynamic"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "CDE With Low Data Quality Score",
+  "description": "Observability Search",
+  "origin": "cdgc-app",
+  "query": "(data element related to business terms which are critical data element) related to data quality rule occurrence with threshold result \"not acceptable\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term",
+      "DQ Rule",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

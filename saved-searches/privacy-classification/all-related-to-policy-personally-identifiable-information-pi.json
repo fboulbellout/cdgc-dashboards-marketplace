@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "all related to policy 'Personally Identifiable Information (PII) Data Terms of Use'",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "all related to policy 'Personally Identifiable Information (PII) Data Terms of Use'",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "privacy-classification",
+    "source_systems": [],
+    "asset_types": [
+      "Policy"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

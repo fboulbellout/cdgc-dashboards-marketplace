@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "dq rules for completeness",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "dq rules",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.ccgf.models.governance.RuleInstance\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Data Quality Rule Occurrence\"]}",
+    "{\"id\":\"com.infa.ccgf.models.governance.RuleType\",\"value\":{\"must\":{\"terms\":[\"Completeness\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Completeness\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "DQ Rule"
+    ],
+    "scope": [
+      "Completeness",
+      "Data Quality Rule Occurrence"
+    ],
+    "search_method": "Dynamic"
+  }
+}

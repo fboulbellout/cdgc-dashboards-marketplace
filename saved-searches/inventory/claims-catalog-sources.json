@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Claims Catalog Sources",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "data elements in (catalog sources with description 'BA:CLAIMS')",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [],
+    "asset_types": [
+      "Catalog Source"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

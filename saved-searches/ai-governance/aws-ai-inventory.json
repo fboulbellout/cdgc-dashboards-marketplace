@@ -1,0 +1,25 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "AWS AI Inventory",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Amazon Bedrock\",\"Amazon SageMaker AI\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Amazon Bedrock\",\"Amazon SageMaker AI\"]}",
+    "{\"id\": \"SearchMethod\", \"value\": {\"must\": {\"terms\": [\"Dynamic\"]}}, \"options\": [\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [
+      "AWS"
+    ],
+    "asset_types": [],
+    "scope": [
+      "Amazon Bedrock",
+      "Amazon SageMaker AI"
+    ],
+    "search_method": "Dynamic"
+  }
+}

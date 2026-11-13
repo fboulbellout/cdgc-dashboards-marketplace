@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "PAT_Know Your Client (KYC) Process",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "Know Your Client (KYC) Process",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Process"
+    ],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

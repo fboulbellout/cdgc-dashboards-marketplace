@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "risk templates",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "(Risk template, mitigation template, questionnaire template) with description",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "ai-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Mitigation",
+      "Questionnaire",
+      "Risk"
+    ],
+    "scope": [],
+    "search_method": "nl"
+  }
+}

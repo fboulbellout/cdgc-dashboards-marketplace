@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "business asset without stakeholder",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "business asset without stakeholder",
+  "filters": [
+    "{\"id\":\"core.origin\",\"value\":{\"must\":{\"terms\":[\"7a1fec19f38f8f5d74c2d3b67c6a6747\",\"e6be8b86bdfc15ed8dc90dfa44e772f6\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"7a1fec19f38f8f5d74c2d3b67c6a6747\",\"e6be8b86bdfc15ed8dc90dfa44e772f6\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Dynamic\"]}},\"options\":[\"Dynamic\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [],
+    "scope": [
+      "7a1fec19f38f8f5d74c2d3b67c6a6747",
+      "e6be8b86bdfc15ed8dc90dfa44e772f6"
+    ],
+    "search_method": "Dynamic"
+  }
+}

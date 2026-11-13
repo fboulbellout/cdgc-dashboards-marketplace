@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Rated Databricks Assets",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "*",
+  "filters": [
+    "{\"id\":\"core.supplement.averageRating\",\"value\":{\"must\":{\"terms\":[],\"range\":{\"gte\":\"1\"},\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"1\"]}",
+    "{\"id\":\"core.resourceType\",\"value\":{\"must\":{\"terms\":[\"Databricks Notebooks\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Databricks Notebooks\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"nl\"]}},\"options\":[\"nl\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Databricks"
+    ],
+    "asset_types": [],
+    "scope": [
+      "1",
+      "Databricks Notebooks"
+    ],
+    "search_method": "nl"
+  }
+}

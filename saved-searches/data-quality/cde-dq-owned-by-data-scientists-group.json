@@ -1,0 +1,26 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "CDE DQ owned by Data Scientists Group",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "dq rule with threshold result in (good, acceptable, 'not acceptable') and related to data element related to business term which are cde",
+  "filters": [
+    "{\"id\":\"core.stakeholderIdentity\",\"value\":{\"must\":{\"terms\":[\"jkATDF8IYMGfN1LTflGMAd\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"jkATDF8IYMGfN1LTflGMAd\"]}",
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Query\"]}},\"options\":[\"Query\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "data-quality",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term",
+      "DQ Rule",
+      "Table"
+    ],
+    "scope": [
+      "jkATDF8IYMGfN1LTflGMAd"
+    ],
+    "search_method": "Query"
+  }
+}

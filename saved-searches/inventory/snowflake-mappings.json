@@ -1,0 +1,23 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "snowflake mappings",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "snowflake",
+  "filters": [
+    "{\"id\":\"core.classType\",\"value\":{\"must\":{\"terms\":[\"com.infa.metadata.cdi.Mapping\",\"com.infa.odin.models.IICS.V2.Mapping\"],\"exists\":false},\"must_not\":{\"terms\":[],\"exists\":false}},\"options\":[\"Mapping\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [],
+    "scope": [
+      "Mapping"
+    ],
+    "search_method": "default"
+  }
+}

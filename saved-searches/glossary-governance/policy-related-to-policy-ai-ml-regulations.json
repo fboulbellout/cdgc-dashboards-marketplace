@@ -1,0 +1,19 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "policy related to policy  \"AI/ML Regulations\"",
+  "description": "AI Regulations",
+  "origin": "cdgc-app",
+  "query": "policy related to policy  \"AI/ML Regulations\"",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Policy"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

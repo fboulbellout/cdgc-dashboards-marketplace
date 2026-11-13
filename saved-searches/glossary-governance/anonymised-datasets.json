@@ -1,0 +1,21 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "Anonymised DataSets",
+  "description": "list of dataset related to anonymised policy",
+  "origin": "cdgc-app",
+  "query": "Data sets related to data elements related to business terms related to Policy  Anonymised",
+  "filters": [],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "glossary-governance",
+    "source_systems": [],
+    "asset_types": [
+      "Business Term",
+      "Policy",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "default"
+  }
+}

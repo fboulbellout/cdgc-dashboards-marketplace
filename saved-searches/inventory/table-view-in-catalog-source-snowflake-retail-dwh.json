@@ -1,0 +1,24 @@
+{
+  "schema": "cdgc-saved-search/v1",
+  "cdgc_release": "IDMC-202610-10M",
+  "name": "(table, view) in Catalog Source 'snowflake_retail_dwh'",
+  "description": "",
+  "origin": "cdgc-app",
+  "query": "(table, view) in Catalog Source 'snowflake_retail_dwh'\n",
+  "filters": [
+    "{\"id\":\"SearchMethod\",\"value\":{\"must\":{\"terms\":[\"Query\"]}},\"options\":[\"Query\"]}"
+  ],
+  "sortOrder": null,
+  "marketplace": {
+    "use_case": "inventory",
+    "source_systems": [
+      "Snowflake"
+    ],
+    "asset_types": [
+      "Catalog Source",
+      "Table"
+    ],
+    "scope": [],
+    "search_method": "Query"
+  }
+}
