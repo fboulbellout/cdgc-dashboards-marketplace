@@ -530,6 +530,87 @@
     }
   },
   "warnings": [],
+  "custom_attributes": {
+    "com.infa.odin.models.custom.ca_2627034127087092973": {
+      "name": null,
+      "source": "content-pack-or-unknown"
+    },
+    "com.infa.odin.models.custom.ca_1840432669235782760": {
+      "name": null,
+      "source": "content-pack-or-unknown"
+    },
+    "com.infa.odin.models.custom.ca_2683866203754331325": {
+      "name": null,
+      "source": "content-pack-or-unknown"
+    },
+    "com.infa.odin.models.custom.ca_5380658459222174056": {
+      "name": "AI_Risk_Tier",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "Tier 1",
+        "Tier 2",
+        "Tier 3"
+      ],
+      "multivalued": false,
+      "source": "memory:usecase-csl-custom-attrs"
+    },
+    "com.infa.odin.models.custom.ca_333390351643939251": {
+      "name": "GxP Relevant",
+      "datatype": "Boolean::Boolean",
+      "lov": [],
+      "multivalued": false,
+      "source": "memory:usecase-csl-custom-attrs"
+    },
+    "com.infa.odin.models.custom.ca_8022043541446276137": {
+      "name": "AI Criticality Level",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "Level 1 - Low",
+        "Level 2 - Mid",
+        "Level 3 - High"
+      ],
+      "multivalued": false,
+      "source": "memory:usecase-csl-custom-attrs"
+    },
+    "com.infa.odin.models.custom.ca_7556786327727442279": {
+      "name": "Regulatory Domains",
+      "datatype": "Dropdown::MultiSelect",
+      "lov": [
+        "GxP",
+        "Privacy",
+        "Workforce",
+        "Financial",
+        "Commercial",
+        "AI Reg"
+      ],
+      "multivalued": true,
+      "source": "memory:usecase-csl-custom-attrs"
+    },
+    "com.infa.odin.models.custom.ca_2648447705871510769": {
+      "name": "Product Stage",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "PoC",
+        "MVP",
+        "Soft Launch",
+        "Scale"
+      ],
+      "multivalued": false,
+      "source": "memory:usecase-csl-custom-attrs"
+    },
+    "com.infa.odin.models.custom.ca_1241069267308257223": {
+      "name": "Regulatory Applicability Level",
+      "datatype": "Dropdown::SingleSelect",
+      "lov": [
+        "L0 - Non-regulated",
+        "L1 - Limited",
+        "L2 - Elevated",
+        "L3 - Critical"
+      ],
+      "multivalued": false,
+      "source": "memory:usecase-csl-custom-attrs"
+    }
+  },
   "tested_releases": [
     "IDMC-202610-10M"
   ],
@@ -551,6 +632,6 @@
       "AI agents & MCP inventory"
     ],
     "locale": "en",
-    "note": "Reference dashboard using the NEW CDGC AI Governance asset types (AIGovernance.UseCase/Risk/Mitigation, AIModel, AIAgent, MCPServer) — not the legacy Project type."
+    "note": "Reference dashboard on the NEW CDGC AI Governance asset types; includes custom_attributes definitions (AI Risk Tier, Product Stage, Regulatory Domains, GxP, AI Criticality, Reg Applicability) so importers can create missing attributes."
   }
 }
